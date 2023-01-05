@@ -1,0 +1,103 @@
+<!-- 특수문자 레이어 -->
+<div class="sh_layer sh_layer01 dlayer">
+   <ul>
+      <li>☆</li>
+      <li>★</li>
+      <li>○</li>
+      <li>●</li>
+      <li>◎</li>
+      <li>◇</li>
+      <li>◆</li>
+      <li>□</li>
+      <li>■</li>
+      <li>△</li>
+      <li>▲</li>
+      <li>▽</li>
+      <li>▼</li>
+      <li>→</li>
+      <li>←</li>
+      <li>↑</li>
+      <li>↓</li>
+      <li>↔</li>
+      <li>↕</li>
+      <li>↗</li>
+      <li>↙</li>
+      <li>↖</li>
+      <li>↘</li>
+      <li>♭</li>
+      <li>♩</li>
+      <li>♪</li>
+      <li>♬</li>
+      <li>◁</li>
+      <li>◀</li>
+      <li>▷</li>
+      <li>▶</li>
+      <li>♤</li>
+      <li>♠</li>
+      <li>♡</li>
+      <li>♥</li>
+      <li>※</li>
+      <li>♧</li>
+      <li>♣</li>
+      <li>☜</li>
+      <li>☞</li>
+      <li>◐</li>
+      <li>◑</li>
+      <li>♨</li>
+      <li>☏</li>
+      <li>☎</li>
+   </ul>
+</div>
+<!-- 특수문자 레이어 끝 -->
+
+<!-- 특수문자 레이어2 -->
+<div class="sh_layer sh_layer02 dlayer">
+   <ul>
+      <li>☆</li>
+      <li>★</li>
+      <li>○</li>
+      <li>●</li>
+      <li>◎</li>
+      <li>◇</li>
+      <li>◆</li>
+      <li>□</li>
+      <li>■</li>
+      <li>△</li>
+      <li>▲</li>
+      <li>▽</li>
+      <li>▼</li>
+      <li>→</li>
+      <li>←</li>
+      <li>↑</li>
+      <li>↓</li>
+      <li>↔</li>
+      <li>↕</li>
+      <li>↗</li>
+      <li>↙</li>
+      <li>↖</li>
+      <li>↘</li>
+      <li>♭</li>
+      <li>♩</li>
+      <li>♪</li>
+      <li>♬</li>
+      <li>◁</li>
+      <li>◀</li>
+      <li>▷</li>
+      <li>▶</li>
+      <li>♤</li>
+      <li>♠</li>
+      <li>♡</li>
+      <li>♥</li>
+      <li>※</li>
+      <li>♧</li>
+      <li>♣</li>
+      <li>☜</li>
+      <li>☞</li>
+      <li>◐</li>
+      <li>◑</li>
+      <li>♨</li>
+      <li>☏</li>
+      <li>☎</li>
+   </ul>
+</div>
+<!-- 특수문자 레이어2 끝 -->
