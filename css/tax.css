@@ -1,0 +1,75 @@
+/* 공통 */
+body { background: #f0f2f4; }
+strong { font-weight: bold !important; }
+.mt5 { margin-top: 5px; }
+.mt10 { margin-top: 10px; }
+.mt20 { margin-top: 20px; }
+.left { float: left; }
+.right { float: right; }
+.tax_wrap { width: 900px; margin: 0 auto; padding: 20px; font-family: "dotum",sans-serif; font-size: 12px; box-sizing: border-box; }
+.tax_top { display: flex; height: 80px; align-items: center; justify-content: space-between; }
+.tax_box { display: flex; justify-content: space-between; }
+.tax_box_left { width: 210px; }
+.tax_box_right { width: 640px; }
+.tax_con { background: #fff; box-shadow: 5px 5px 10px rgba(0,0,0,0.15); border-radius: 10px; }
+.copy { display: inline-block; width: 100%; margin-top: 20px; text-align: center; }
+.page .button { text-align: center; font-weight: bold; font-family: "dotum",sans-serif; }
+.page .button::after { clear: both; content: ''; }
+.page .button ul { display: inline-block; margin-top: 20px; }
+.page .button ul > li { float: left; line-height: 21px; margin: 0 10px; }
+.page .button ul > li > a { font-size: 12px; display: block; text-decoration: none; }
+.page .button ul > li.this > a { color: #eb8c00; }
+.page .button ul > li.page_btn { margin: 0 3px; }
+.page .button ul > li.page_btn a { display: flex; align-items: center; justify-content: center; width: 20px; height: 18px; border: 1px solid #ccc; border-radius: 4px; }
+
+/* 회원정보 */
+#tax_member { height: 150px; display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; position: relative; overflow: hidden; }
+#tax_member > p { line-height: 16px; }
+#tax_member::after { width: 50px; height: 50px; content: ''; display: block; transform: rotate(45deg); background: #146099; position: absolute; left:-25px; top:-25px; }
+
+/* 결제정보 연동 현황 */
+#tax_current { padding: 10px; }
+#tax_current > h1 { display: flex; align-items: center; margin-top: 10px; }
+#tax_current > h1 > b { color: #146099; font-weight: bold; }
+#tax_current > ul { padding: 10px; border: 1px solid #ddd; border-radius: 5px; margin-top: 10px; }
+#tax_current > ul > li { display: flex; justify-content: space-between; align-items: center; line-height: 20px; }
+#tax_current > ul > li > span { float: left; }
+#tax_current > ul > li > span > img { margin-right: 5px; }
+#tax_current > ul > li > p { width: 65px; }
+
+/* 고객센터 */
+#tax_customer { background: #207dc2; color: #fff; padding: 10px 15px; }
+#tax_customer ul li { line-height: 18px; }
+
+/* 세금 계산서 발행자 기본 정보 */
+#tax_member_info { height: 150px; background: #207dc2; padding: 10px 15px; box-sizing: border-box; }
+#tax_member_info > h1 { margin-bottom: 8px; padding-left: 10px; }
+#tax_member_info .tax_member_con { border-top: 1px dashed #fff; padding: 10px; color: #fff; display: flex; }
+#tax_member_info .tax_member_con ul { width: 295px; }
+#tax_member_info .tax_member_con ul li { line-height: 22px; display: flex; justify-content: space-between; }
+#tax_member_info .tax_member_con ul li > span { position: relative; padding-left: 10px; }
+#tax_member_info .tax_member_con ul li > span::after { content: ''; display: block; position: absolute; top: 50%; left: 0; transform: translate(0,-50%); width: 0; height: 0; border: 5px solid transparent; border-left-color: #fff; }
+#tax_member_info .tax_member_con ul li > p { width: 190px; }
+
+/* 결제내역 증빙서류 */
+#document_con { padding: 20px; }
+#document_con > h1 img { margin-bottom: 5px; }
+#document_con > h1 > p { line-height: 16px; padding-left: 8px; }
+#document_con > ul { margin-top: 20px; display: flex; justify-content: space-between; }
+#document_con > ul > li { width: 185px; height: 215px; border: 1px solid #111; border-radius: 5px; box-shadow: 1px 1px 6px rgba(0,0,0,0.15); }
+
+/* 공통 테이블 */
+#document_con .document_table { margin-top: 10px; }
+#document_con .document_table table { width: 100%; }
+#document_con .document_table table th { background: #146099; color: #fff; font-weight: bold; height: 40px; vertical-align: middle; border: 1px solid #ddd; }
+#document_con .document_table table td { border: 1px solid #ddd; height: 30px; vertical-align: middle; padding: 0 10px; }
+#document_con .document_table.document_list table td { text-align: center; }
+#document_con .document_table.document_list table td #bill:hover { color: #fd7617; }
+#document_con .sel_box { display: flex; height: 25px; align-items: center; justify-content: space-between; width: 100%; margin-top: 10px; }
+#document_con .sel_box select { height: 25px; border: 1px solid #111; box-sizing: border-box; height: 25px; font-size: 12px; outline: none; }
+#document_con .sel_box label { display: inline-block; height: 26px; line-height: 26px; padding: 0 12px; background: #3e5760; color: #fff; cursor: pointer; }
+
+/* 무통장 결제 내역 출력 */
+#document_con .info_table { margin-top: 10px; }
+#document_con .info_table table { width: 100%; }
+#document_con .info_table table td { height: 30px; padding: 5px 10px; border: 1px solid #ddd; vertical-align: middle; line-height: 16px; box-sizing: border-box; }
