@@ -1337,15 +1337,6 @@ svg { fill: var(--bg5); }
 .template_layer span { width: 100%; line-height: 1.6; text-align: center; font-weight: 500; }
 .template_layer a { font-size: 15px; background-color: var(--btn2); color: var(--text); padding: 10px 30px; border-radius: 5px; }
 
-
-
-
-
-
-
-
-
-
 /* 팝업 공통 */
 .popup_wrap .popup_title { background-color: var(--lightblack); display: flex; align-items: center; height: 60px; border-bottom: 4px solid var(--border2); }
 .popup_wrap .popup_title h1 { font-size: 22px; font-weight: 500; color: var(--text); padding: 0 20px; }
