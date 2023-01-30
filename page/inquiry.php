@@ -4,6 +4,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="../favicon.ico">
    <link rel="stylesheet" href="../css/reset.css">
    <link rel="stylesheet" href="../css/common.css">
    <link rel="stylesheet" href="../css/SUIT.css">
@@ -36,8 +37,8 @@
          </div>
          <div class="inq_wrap">
             <ul>
-               <li class="list_none">등록된 내용이 없습니다.</li>
-               <!-- <li><span><b>필독</b></span><i><a href="inquiry=view.php"><strong>문자전송 결과확인 및 실패보상 안내</strong></a></i><h1>관리자</h1><strong>2022-11-01</strong><h3></h3></li>
+               <!-- <li class="list_none">등록된 내용이 없습니다.</li> -->
+               <li><span><b>필독</b></span><i><a href="inquiry=view.php"><strong>문자전송 결과확인 및 실패보상 안내</strong></a></i><h1>관리자</h1><strong>2022-11-01</strong><h3></h3></li>
                <li><span>10</span><i><a href="">2022년 10월분 세금계산서 발행마감 안내(~11/10)</a></i><h2>김**</h2><strong>2022-11-01</strong><h3><b class="inq_n">답변대기</b></h3></li>
                <li><span>9</span><i><a href="">2022년 10월분 세금계산서 발행마감 안내(~11/10)</a></i><h2>김**</h2><strong>2022-11-01</strong><h3><b class="inq_y">답변완료</b></h3></li>
                <li><span>8</span><i><a href="">2022년 10월분 세금계산서 발행마감 안내(~11/10)</a></i><h2>김**</h2><strong>2022-11-01</strong><h3><b class="inq_y">답변완료</b></h3></li>
@@ -47,7 +48,7 @@
                <li><span>4</span><i><a href="">2022년 10월분 세금계산서 발행마감 안내(~11/10)</a></i><h2>김**</h2><strong>2022-11-01</strong><h3><b class="inq_y">답변완료</b></h3></li>
                <li><span>3</span><i><a href="">2022년 10월분 세금계산서 발행마감 안내(~11/10)</a></i><h2>김**</h2><strong>2022-11-01</strong><h3><b class="inq_y">답변완료</b></h3></li>
                <li><span>2</span><i><a href="">2022년 10월분 세금계산서 발행마감 안내(~11/10)</a></i><h2>김**</h2><strong>2022-11-01</strong><h3><b class="inq_y">답변완료</b></h3></li>
-               <li><span>1</span><i><a href="">2022년 10월분 세금계산서 발행마감 안내(~11/10)</a></i><h2>김**</h2><strong>2022-11-01</strong><h3><b class="inq_y">답변완료</b></h3></li> -->
+               <li><span>1</span><i><a href="">2022년 10월분 세금계산서 발행마감 안내(~11/10)</a></i><h2>김**</h2><strong>2022-11-01</strong><h3><b class="inq_y">답변완료</b></h3></li>
             </ul>
          </div>
          <div class="page">

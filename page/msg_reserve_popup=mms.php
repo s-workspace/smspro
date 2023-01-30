@@ -4,6 +4,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="../favicon.ico">
    <link rel="stylesheet" href="../css/reset.css">
    <link rel="stylesheet" href="../css/common.css">
    <link rel="stylesheet" href="../css/SUIT.css">
@@ -13,7 +14,7 @@
 <body style="min-width:660px; max-width:660px;">
    <div class="popup_wrap">
       <div class="popup_title">
-         <h1>예약내역 상세보기</h1>
+         <h1>예약내역 상세보기(일반문자)</h1>
       </div>
       <div class="popup_content">
          <div class="detail_top">
@@ -21,6 +22,7 @@
                <div class="detail_list">
                   <ul>
                      <li><span><strong>회신번호</strong></span><span class="t_red"><strong>01012345678</strong></span></li>
+                     <li><span><strong>전송유형</strong></span><strong class="t_blue">MMS 1건</strong></li>
                      <li><span><strong>예약일시</strong></span>2021-06-09 11:22:00</li>
                      <li><span><strong>예약취소 / 내용수정 가능 여부</strong></span><strong class="t_red">불가능</strong></li>
                   </ul>

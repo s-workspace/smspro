@@ -44,7 +44,7 @@
    </i>
 </div>
 
-<!-- 레이어 시작 끝 -->
+<!-- 레이어 끝 -->
 
 <div class="admin_header">
    <div class="menu">

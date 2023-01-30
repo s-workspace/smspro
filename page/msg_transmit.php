@@ -4,6 +4,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="../favicon.ico">
    <link rel="stylesheet" href="../css/reset.css">
    <link rel="stylesheet" href="../css/common.css">
    <link rel="stylesheet" href="../css/SUIT.css">
@@ -33,7 +34,8 @@
       <div class="wrap">
          <div class="title_top">
             <ul>
-               <li class="this"><a href="">전송내역 관리</a></li>
+               <li class="this"><a href="msg_transmit.php">전송내역 관리</a></li>
+               <li><a href="stat_manage.php">전송내역 통계</a></li>
             </ul>
          </div>
          <div class="info_wrap">
@@ -202,10 +204,10 @@
                   </tr>
                </thead>
                <tbody>
-                  <tr>
-                     <td colspan="9" style="height:300px;">전송내역이 없습니다.</td>
-                  </tr>
                   <!-- <tr>
+                     <td colspan="9" style="height:300px;">전송내역이 없습니다.</td>
+                  </tr> -->
+                  <tr>
                      <td><input type="checkbox" name="" value=""></td>
                      <td>1</td>
                      <td>RCS문자</td>
@@ -270,7 +272,7 @@
                      <td>2021-12-31 <br><span class="t_gray">11:32:12</span></td>
                      <td class="t_left"></td>
                      <td><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"><path d="m15.938 17.188-5.021-5.021q-.625.437-1.365.698-.74.26-1.594.26-2.125 0-3.614-1.5-1.49-1.5-1.49-3.625t1.49-3.625q1.489-1.5 3.614-1.5t3.625 1.5q1.5 1.5 1.5 3.625 0 .854-.25 1.594-.25.739-.687 1.344l5 5.02Zm-7.98-5.813q1.417 0 2.407-.979.989-.979.989-2.396 0-1.417-.989-2.396-.99-.979-2.407-.979-1.416 0-2.396.979-.979.979-.979 2.396 0 1.417.979 2.396.98.979 2.396.979Z"/></svg></a></td>
-                  </tr> -->
+                  </tr>
                </tbody>
             </table>
             <div class="page">

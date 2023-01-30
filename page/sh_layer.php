@@ -101,3 +101,55 @@
    </ul>
 </div>
 <!-- 특수문자 레이어2 끝 -->
+
+<!-- 특수문자 레이어3 -->
+<div class="sh_layer sh_layer03 dlayer">
+   <ul>
+      <li>☆</li>
+      <li>★</li>
+      <li>○</li>
+      <li>●</li>
+      <li>◎</li>
+      <li>◇</li>
+      <li>◆</li>
+      <li>□</li>
+      <li>■</li>
+      <li>△</li>
+      <li>▲</li>
+      <li>▽</li>
+      <li>▼</li>
+      <li>→</li>
+      <li>←</li>
+      <li>↑</li>
+      <li>↓</li>
+      <li>↔</li>
+      <li>↕</li>
+      <li>↗</li>
+      <li>↙</li>
+      <li>↖</li>
+      <li>↘</li>
+      <li>♭</li>
+      <li>♩</li>
+      <li>♪</li>
+      <li>♬</li>
+      <li>◁</li>
+      <li>◀</li>
+      <li>▷</li>
+      <li>▶</li>
+      <li>♤</li>
+      <li>♠</li>
+      <li>♡</li>
+      <li>♥</li>
+      <li>※</li>
+      <li>♧</li>
+      <li>♣</li>
+      <li>☜</li>
+      <li>☞</li>
+      <li>◐</li>
+      <li>◑</li>
+      <li>♨</li>
+      <li>☏</li>
+      <li>☎</li>
+   </ul>
+</div>
+<!-- 특수문자 레이어2 끝 -->

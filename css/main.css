@@ -80,9 +80,9 @@
 
 .section .msg_kind { display: flex; justify-content: space-between; }
 .section .msg_kind i span { display: flex; align-items: center; gap: 10px; font-size: 22px; font-weight: 700; letter-spacing: -0.02em; }
-.section .msg_kind i h1 { font-size: 47px; color: #1e293b; font-weight: 700; line-height: 1.4em; margin-top: 40px; }
-.section .msg_kind i h2 { font-size: 17px; font-weight: 500; color: #64748b; margin-top: 30px; }
-.section .msg_kind i h3 { font-size: 17px; font-weight: 500; color: #64748b; display: inline-block; border-top: 1px dashed #cbcfd7; margin-top: 15px; padding-top: 15px; }
+.section .msg_kind i h1 { font-size: 47px; color: #1e293b; font-weight: 700; letter-spacing: -0.02em; line-height: 1.4em; margin-top: 40px; }
+.section .msg_kind i h2 { font-size: 17px; font-weight: 500; margin-top: 30px; }
+.section .msg_kind i h3 { font-size: 17px; font-weight: 500; display: inline-block; border-top: 1px dashed #cbcfd7; margin-top: 15px; padding-top: 15px; }
 .section .msg_kind i h4 { font-size: 15px; color: #888; margin-top: 15px; }
 
 .section .rcs_info_table { margin-top: 120px; }
@@ -127,7 +127,7 @@
 .section .rcs_info .rcs_icon_wrap .rcs_icon { display: flex; align-items: center; gap: 20px; }
 .section .rcs_info .rcs_icon_wrap .rcs_icon p { display: flex; align-items: center; justify-content: center; border-radius: 10px; width: 80px; height: 80px; }
 .section .rcs_info .rcs_icon_wrap .rcs_icon h1 { font-size: 20px; font-weight: 700; margin-bottom: 10px; }
-.section .rcs_info .rcs_icon_wrap .rcs_icon span { font-size: 16px; font-weight: 500; color: #888; line-height: 24px; }
+.section .rcs_info .rcs_icon_wrap .rcs_icon span { font-size: 17px; font-weight: 500; color: #888; line-height: 24px; }
 .section .rcs_info .rcs_icon_wrap .rcs_icon:nth-child(1) p { background-color: #ffe69b; }
 .section .rcs_info .rcs_icon_wrap .rcs_icon:nth-child(2) p { background-color: #d1e9ff; }
 .section .rcs_info .rcs_icon_wrap .rcs_icon:nth-child(3) p { background-color: #f9e5ff; }
@@ -151,9 +151,10 @@
 .section .service_info ul li a { width: 100%; height: 100%; padding: 40px; position: relative; box-sizing: border-box; }
 .section .service_info ul li a h1 { font-size: 24px; font-weight: 700; margin-bottom: 20px; letter-spacing: -0.04em; line-height: 1.2; }
 .section .service_info ul li a span { font-size: 18px; font-weight: 500; color: #64748b; letter-spacing: -0.02em; line-height: 1.4; }
-.section .service_info ul li a p { position: absolute; bottom: 30px; color: var(--blue); font-weight: 600; display: flex; align-items: center; gap: 5px; }
+.section .service_info ul li a p { position: absolute; bottom: 40px; color: var(--blue); font-size: 15px; font-weight: 600; display: flex; align-items: center; gap: 5px; }
 .section .service_info ul li a p img { transition: 0.3s; }
-.section .service_info ul li:hover img { transform: translateX(10px); }
+.section .service_info ul li:hover p img { transform: translateX(10px); }
+/* .section .service_info ul li .g-icon { position: absolute; top: 30px; right: 30px; } */
 
 .section .cs_box { margin-top: 80px; display: flex; gap: 20px; }
 .section .cs_box ul { display: flex; justify-content: space-between; width: 100%; border: 1px solid #e2e5eb; border-radius: 10px; padding: 30px; }

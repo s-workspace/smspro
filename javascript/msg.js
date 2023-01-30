@@ -35,6 +35,7 @@ $(function(){
     $('.btn_view').hide();
     $('.msg_title ').removeClass('on mms');
   });
+
   $('#return_btn2').click(function(e){
     e.preventDefault();
     $('.return_write #text_box2').val('');
@@ -43,31 +44,66 @@ $(function(){
     $('.return_write .t_byte b').html('0');
     $('.t_byte > span').html('/90Byte');
   });
+
+  // 버튼 추가
+  $('.btn_upload > ul li').click(function(){
+    $(this).addClass('this');
+    $(this).siblings().removeClass('this');
+    if ($(this).hasClass('btn-01')) {
+      $('.add_btn.btn-01').removeClass('none');
+      $('.btn_view .btn-01').show();
+      
+      $('.add_btn.btn-02').addClass('none');
+      $('.add_btn.btn-03').addClass('none');
+      $('.btn_view .btn-02').hide();
+      $('.btn_view .btn-03').hide();
+    }
+    else if ($(this).hasClass('btn-02')) {
+      $('.add_btn.btn-01').removeClass('none');
+      $('.btn_view .btn-01').show();
+      $('.add_btn.btn-02').removeClass('none');
+      $('.btn_view .btn-02').show();
+      
+      $('.add_btn.btn-03').addClass('none');
+      $('.btn_view .btn-03').hide();
+    }
+    else if ($(this).hasClass('btn-03')) {
+      $('.add_btn.btn-01').removeClass('none');
+      $('.btn_view .btn-01').show();
+      $('.add_btn.btn-02').removeClass('none');
+      $('.btn_view .btn-02').show();
+      $('.add_btn.btn-03').removeClass('none');
+      $('.btn_view .btn-03').show();
+    }
+    else {
+      $('.add_btn').addClass('none');
+      $('.btn_view button').hide();
+    }
+  });
+
+  $('.btnName').on('keydown keyup', function(){
+    $('.btnName').each(function(index){
+      index ++;
+      var btnName = $(this).val();
+      if(btnName.length > 0) $('.btn_view .btn-0' + index).text(btnName);
+      else $('.btn_view .btn-0' + index).text('버튼명');
+    });
+  });
   
   // 버튼 구분
-  $('#url_sel').click(function(){
-    $('#url').siblings('.sub_input').hide();
-    $('#url').show();
-  });
-  $('#num_sel').click(function(){
-    $('#num').siblings('.sub_input').hide();
-    $('#num').show();
+  $('.add_btn').each(function(index){
+    index ++;
+    $('.add_btn.btn-0' + index + ' .url_sel').click(function(){
+      $('.add_btn.btn-0' + index + ' .i_url').siblings('.sub_input').addClass('none');
+      $('.add_btn.btn-0' + index + ' .i_url').removeClass('none')
+    });
+
+    $('.add_btn.btn-0' + index + ' .num_sel').click(function(){
+      $('.add_btn.btn-0' + index + ' .i_num').siblings('.sub_input').addClass('none');
+      $('.add_btn.btn-0' + index + ' .i_num').removeClass('none')
+    });
   });
 
-  // 버튼 생성 레이어
-  $('.add_btn').click(function(e){
-    e.preventDefault();
-    $('.layer_cover').show();
-    $('.btn_layer').fadeIn('300');
-  });
-
-  $('.get_btn').click(function(e){
-    var btnName = $('#btnName').val();
-    e.preventDefault();
-    $('.layer_cover').hide();
-    $('.btn_layer').fadeOut('300');
-    $('.btn_view').append('<button>' + btnName + '</button>');
-  });
 
   // 버튼 삭제
   $(document).on('click', '.btn_view button', function(){
@@ -226,7 +262,7 @@ $(function(){
     }
   });
 
-  //  메시지 작성
+  // 메시지 작성
   $(window).on("resize scroll",function(){
     var log = $(".msg_con").height() + 80;
     var scrollTop = $(window).scrollTop();
@@ -248,16 +284,16 @@ $(function(){
   });
 
   // 메시지 제목
-  $(".msg_write .msg_tit input").on('keydown keyup', function (e) {
+  $(".msg_tit input").on('keydown keyup', function (e) {
     var msgTitle = $(this).val();
     $('.msg_title').html(msgTitle);
+    $('.msg_tit input').val(msgTitle);
   });
 
   // 글자수 세기
   $("#text_box").on('keyup keydown', function (e) {
     var totalByte = 0;
     var textLength = $(this).val();
-    var textView = $(this).val();
     var saveText = "";
 
     for (var i = 0 ; i < textLength.length; i++) {
@@ -295,7 +331,7 @@ $(function(){
     $('#text_box2').val(saveText);
   }
   else {
-    $('.msg_view_text > span').html(textView);
+    $('.msg_view_text > span').html(saveText);
     $('#text_box2').val(saveText);
   }
   });

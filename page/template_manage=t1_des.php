@@ -12,46 +12,9 @@
 </head>
 <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
 <script src="../javascript/console.js"></script>
+<script src="../javascript/template.js"></script>
 <script src="../javascript/msg.js"></script>
 <body>
-   <!-- 버튼 생성 레이어 -->
-   <div class="btn_layer layer">
-      <h1>버튼 생성</h1>
-      <div class="input_layer">
-         <i>
-            <p>버튼명</p>
-            <input type="text" id="btnName" placeholder="이름을 입력해 주세요.">
-         </i>
-         <i>
-            <p>버튼타입</p>
-            <div class="select_box">
-               <span></span>
-               <ul>
-                  <li id="url_sel">URL 링크</li>
-                  <li id="num_sel">전화연결</li>
-               </ul>
-            </div>
-         </i>
-      </div>
-      <div class="input_layer sub_input" id="url">
-         <i>
-            <p>URL 주소</p>
-            <input type="text" placeholder="https://를 포함한 URL을 입력해 주세요.">
-         </i>
-      </div>
-      <div class="input_layer sub_input" id="num">
-         <i>
-            <p>전화연결</p>
-            <input type="text" placeholder="전화번호를 입력해 주세요.">
-         </i>
-      </div>
-      <div class="layer_bottom">
-         <a href="" class="get_btn">추가</a>
-         <a href="" class="layer_cancel">취소</a>
-      </div>
-   </div>
-   <!-- 버튼 생성 레이어 끝 -->
-
    <!-- 변수 등록 가이드 -->
    <div class="VarGuide_layer layer">
       <h1>변수 등록 가이드</h1>
@@ -101,11 +64,6 @@
 
    <?php include 'sh_layer.php'; ?>
    <?php include 'variable_layer.php'; ?>
-   <?php include 'msgload_layer=rec.php'; ?>
-   <?php include 'msgload_layer=rec_mms.php'; ?>
-   <?php include 'msgload_layer=sms.php'; ?>
-   <?php include 'msgload_layer=lms.php'; ?>
-   <?php include 'msgload_layer=mms.php'; ?>
    <?php include 'admin_header.php'; ?>
    <?php include 'side_bar.php'; ?>
    <div class="container">
@@ -120,11 +78,11 @@
             <div class="write_box">
                <div class="msg_content msg_write">
                   <div class="msg_wbox mt40">
-                     <div class="rcs_box">
+                     <div class="rcs_box rcs_cell_box">
                         <div class="rcs_box_con">
                            <i>
-                              <p>브랜드 선택</p>
-                              <div class="select_box">
+                              <p>* 브랜드 선택</p>
+                              <div class="select_box brand_sel">
                                  <span>브랜드 선택</span>
                                  <ul>
                                     <li><a href="brand.php">브랜드 연동</a></li>
@@ -134,9 +92,9 @@
                               </div>
                            </i>
                            <i>
-                              <p>타이틀 유형</p>
+                              <p>* 타이틀 유형</p>
                               <div class="select_box title_sel">
-                                 <span>타이틀 유형 선택</span>
+                                 <span>승인</span>
                                  <ul>
                                     <li>승인</li>
                                     <li>입금</li>
@@ -156,51 +114,106 @@
                         </div>
                         <div class="rcs_box_con mt10">
                            <i>
-                              <p>템플릿 속성</p>
+                              <p>* 템플릿 속성</p>
                               <input type="text" value="타이틀 선택형 | 서술형(description)" readonly>
                            </i>
                         </div>
                         <div class="rcs_box_con mt10">
                            <i>
-                              <p>템플릿 명</p>
-                              <input type="text" placeholder="템플릿명을 입력해 주세요.">
+                              <p>* 템플릿 명</p>
+                              <input type="text" placeholder="템플릿명을 입력해 주세요. (30자 이내)" maxlength="30">
                            </i>
                         </div>
                      </div>
                      <div class="msg_table temp_table">
                         <i>
-                           <div class="msg_tit">
-                              <input type="text" placeholder="템플릿 제목 입력 (타이틀 선택형은 입력 불가)" maxlength="30" readonly>
-                           </div>
-                           <div class="msg_text sms">
-                              <textarea name="" id="text_box" placeholder="메시지 내용은 고정부 메시지와 변수명에 들어가는
+                           <div class="rcs_text_box">
+                              <textarea name="" class="rcs_text" placeholder="메시지 내용은 고정부 메시지와 변수명에 들어가는
 메시지를 합쳐서 총 90자 이내로 작성해주세요.
 (90자 초과시 전송 불가)"></textarea>
                               <div class="t_byte">
-                                 <b>0</b><span>/90Byte</span>
+                                 <b>0</b><span>/90자</span>
                               </div>
                            </div>
                         </i>
-                        <div class="btn_box">
+                        <div class="btn_box mt10">
                            <ul>
-                              <li><a href="" class="myMsg">메시지 불러오기</a></li>
-                              <li><a href="" class="recMsg">전송내역 불러오기</a></li>
                               <li><a href="">내용저장</a></li>
-                              <li><a href="" id="return_btn">다시쓰기</a></li>
-                              <li><a href="" class="action_btn sh_btn">특수문자</a></li>
-                              <li><a href="" class="action_btn variable_btn">#{변수}</a></li>
+                              <li><a href="" id="return_btn3">다시쓰기</a></li>
+                              <li><a href="" class="action_btn sh_btn3">특수문자</a></li>
+                              <li><a href="" class="action_btn variable_btn3">#{변수}</a></li>
                            </ul>
                         </div>
                      </div>
-                     <div class="btn_upload" style="display: flex !important;">
+                     <div class="btn_upload on">
                         <h1><img src="../images/common/addbox_icon.png" alt="">버튼 추가</h1>
                         <ul>
-                           <li>
-                              <a href="" class="add_btn">버튼 생성하기</a>
-                           </li>
-                           <li><span>※ 버튼 최대 3개 추가 가능</span></li>
-                           <li><span>※ 미리보기 화면에 추가된 버튼 클릭시 삭제</span></li>
+                           <li class="this">미사용</li>
+                           <li class="btn-01">1개</li>
+                           <li class="btn-02">2개</li>
                         </ul>
+                        <div class="add_btn btn-01 none">
+                           <h1>- 버튼 01</h1>
+                           <div class="btn_input">
+                              <i>
+                                 <p>버튼명</p>
+                                 <input type="text" class="btnName" placeholder="이름을 입력해 주세요." maxlength="16">
+                              </i>
+                              <i>
+                                 <p>버튼타입</p>
+                                 <div class="select_box">
+                                    <span>URL 연결</span>
+                                    <ul>
+                                       <li class="url_sel">URL 연결</li>
+                                       <li class="num_sel">전화연결</li>
+                                    </ul>
+                                 </div>
+                              </i>
+                           </div>
+                           <div class="btn_input sub_input i_url">
+                              <i>
+                                 <p>URL 주소</p>
+                                 <input type="text" placeholder="https://를 포함한 URL을 입력해 주세요.">
+                              </i>
+                           </div>
+                           <div class="btn_input sub_input i_num none">
+                              <i>
+                                 <p>전화연결</p>
+                                 <input type="text" placeholder="전화번호를 입력해 주세요.">
+                              </i>
+                           </div>
+                        </div>
+                        <div class="add_btn btn-02 none">
+                           <h1>- 버튼 02</h1>
+                           <div class="btn_input">
+                              <i>
+                                 <p>버튼명</p>
+                                 <input type="text" class="btnName" placeholder="이름을 입력해 주세요." maxlength="16">
+                              </i>
+                              <i>
+                                 <p>버튼타입</p>
+                                 <div class="select_box">
+                                    <span>URL 연결</span>
+                                    <ul>
+                                       <li class="url_sel">URL 연결</li>
+                                       <li class="num_sel">전화연결</li>
+                                    </ul>
+                                 </div>
+                              </i>
+                           </div>
+                           <div class="btn_input sub_input i_url">
+                              <i>
+                                 <p>URL 주소</p>
+                                 <input type="text" placeholder="https://를 포함한 URL을 입력해 주세요.">
+                              </i>
+                           </div>
+                           <div class="btn_input sub_input i_num none">
+                              <i>
+                                 <p>전화연결</p>
+                                 <input type="text" placeholder="전화번호를 입력해 주세요.">
+                              </i>
+                           </div>
+                        </div>
                      </div>
                      <div class="temp_bottom">
                         <i>
@@ -229,9 +242,12 @@
                      <div class="msg_view">
                         <div class="image_preview"><img id="img"/></div>
                         <div class="msg_view_text">
-                           <h1 id="rcs_title"></h1>
+                           <h1 id="rcs_title" class="n00"></h1>
                            <span>내용 미리보기</span>
-                           <div class="btn_view"></div>
+                           <div class="btn_view">
+                              <button class="btn-01">버튼명</button>
+                              <button class="btn-02">버튼명</button>
+                           </div>
                         </div>
                      </div>
                   </div>

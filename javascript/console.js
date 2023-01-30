@@ -14,10 +14,12 @@ $(function(){
     if(window.innerHeight < 810) {
       $('.side_bar > ul').addClass('scroll');
       $('.my_msg_layer').addClass('short');
+      $('.brand_layer').addClass('short');
     }
     else {
       $('.side_bar > ul').removeClass('scroll');
       $('.my_msg_layer').removeClass('short');
+      $('.brand_layer').removeClass('short');
     }
   });
   // 낮은 해상도 끝
@@ -32,6 +34,7 @@ $(function(){
   // 입력 이벤트
   $('.select_box').click(function(){
     $(this).find("ul").toggle('300');
+    $(this).parents('i').siblings().find(".select_box ul").hide('300');
   });
 
   $('.select_box ul li').click(function(){
@@ -284,24 +287,7 @@ $(function(){
   $('.brand_add').click(function(e){
     e.preventDefault();
     $('.layer_cover').show();
-    $('.brandbf_layer').fadeIn();
-  });
-  $('.brand_add2').click(function(e){
-    e.preventDefault();
-    $('.layer').hide();
-    $('.layer_cover').show();
     $('.brand_layer').fadeIn();
-  });
-
-  $(".file_input").change(function(){
-    var fileName = $(this).val();
-    $(this).siblings(".upload_name").removeClass('none');
-    $(this).siblings('label').addClass('none');
-    $(this).siblings(".upload_name").val(fileName);
-  });
-
-  $('.upload_name').click(function(){
-    $(this).siblings('label').trigger("click");
   });
   // 브랜드 연동 끝
 

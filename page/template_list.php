@@ -4,6 +4,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="../favicon.ico">
    <link rel="stylesheet" href="../css/reset.css">
    <link rel="stylesheet" href="../css/common.css">
    <link rel="stylesheet" href="../css/SUIT.css">
@@ -18,37 +19,45 @@
       <div class="wrap">
          <div class="title_top">
             <ul>
-               <li><a href="template_manage.php">템플릿 등록</a></li>
+               <li><a href="template_create.php">템플릿 등록</a></li>
                <li class="this"><a href="template_list.php">템플릿 목록</a></li>
             </ul>
          </div>
          <div class="template_list_view mt20">
-            <p>
-               <select name="" id="">
-                  <option value="">브랜드 선택</option>
-                  <option value="">전체</option>
-               </select>
-               <select name="" id="">
-                  <option value="">전체</option>
-                  <option value="">심사중</option>
-                  <option value="">승인</option>
-                  <option value="">반려</option>
-               </select>
-               <select name="" id="">
-                  <option value="">템플릿명</option>
-                  <option value="">내용</option>
-               </select>
-               <input type="text">
-               <input type="button" value="검색">
-            </p>
+            <div class="template_list_top">
+               <i>
+                  <select name="" id="">
+                     <option value="">브랜드 선택</option>
+                     <option value="">브랜드1</option>
+                  </select>
+                  <select name="" id="">
+                     <option value="">상태(전체)</option>
+                     <option value="">저장</option>
+                     <option value="">반려</option>
+                     <option value="">승인대기</option>
+                     <option value="">승인완료</option>
+                     <option value="">처리중</option>
+                     <option value="">처리중(삭제)</option>
+                  </select>
+               </i>
+               <i>
+                  <select name="" id="">
+                     <option value="">템플릿명</option>
+                     <option value="">내용</option>
+                  </select>
+                  <input type="text">
+                  <input type="button" value="검색">
+               </i>
+            </div>
             <div class="template_table">
                <table>
                   <colgroup>
                      <col width="150">
                      <col width="240">
-                     <col width="200">
-                     <col width="200">
+                     <col width="160">
+                     <col width="160">
                      <col width="120">
+                     <col width="80">
                      <col width="80">
                   </colgroup>
                   <thead>
@@ -58,6 +67,7 @@
                         <th>템플릿유형</th>
                         <th>옵션</th>
                         <th>상태</th>
+                        <th>등록자</th>
                         <th>관리</th>
                      </tr>
                   </thead>
@@ -71,15 +81,35 @@
                         <td>타이틀 선택형</td>
                         <td>기본(free)</td>
                         <td>-</td>
+                        <td>관리자</td>
+                        <td>-</td>
+                     </tr>
+                     <tr>
+                        <td>2022-12-27</td>
+                        <td><a href="template_list=view2.php">프리 템플릿</a></td>
+                        <td>타이틀 자유형</td>
+                        <td>기본(free)</td>
+                        <td>-</td>
+                        <td>관리자</td>
+                        <td>-</td>
+                     </tr>
+                     <tr>
+                        <td>2022-12-27</td>
+                        <td><a href="template_list=view3.php">회원가입 안내</a></td>
+                        <td>타이틀 선택형</td>
+                        <td>서술(description)</td>
+                        <td><span class="t_blue">승인완료</span></td>
+                        <td>관리자</td>
                         <td><input type="button" value="삭제" class="btn2"></input></td>
                      </tr>
                      <tr>
                         <td>2022-12-27</td>
-                        <td><a href="template_list=view2.php">이미지 템플릿</a></td>
-                        <td>이미지 강조형</td>
-                        <td>기본(free)</td>
+                        <td><a href="template_list=view4.php">입금확인 안내</a></td>
+                        <td>타이틀 선택형</td>
+                        <td>스타일(cell)</td>
+                        <td><span>승인대기</span></td>
+                        <td>관리자</td>
                         <td>-</td>
-                        <td><input type="button" value="삭제" class="btn2"></input></td>
                      </tr>
                   </tbody>
                </table>

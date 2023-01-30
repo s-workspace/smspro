@@ -4,6 +4,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="favicon.ico">
    <link rel="stylesheet" href="css/reset.css">
    <link rel="stylesheet" href="css/common.css">
    <link rel="stylesheet" href="css/SUIT.css">
@@ -286,21 +287,25 @@
                   <h1>발신번호 사전등록 안내</h1>
                   <span>전송전에 미리 발신번호를<br>등록해 주세요.</span>
                   <p>자세히 보기<img src="images/main/arrow_icon.png" alt=""></p>
+                  <!-- <div class="g-icon"><img src="images/main/guide01.png" alt=""></div> -->
                </a></li>
                <li class="active"><a href="page/guide02.php" target="_blank">
                   <h1>통신가입 증명서 발급방법</h1>
                   <span>통신사별 가입 증명서 발급방법<br> 알아보세요.</span>
                   <p>자세히 보기<img src="images/main/arrow_icon.png" alt=""></p>
+                  <!-- <div class="g-icon"><img src="images/main/guide02.png" alt=""></div> -->
                </a></li>
                <li class="active"><a href="page/guide03.php" target="_blank">
                   <h1>광고성 메시지 작성안내</h1>
                   <span>광고성 메시지 전송전 반드시<br>확인해 주세요.</span>
                   <p>자세히 보기<img src="images/main/arrow_icon.png" alt=""></p>
+                  <!-- <div class="g-icon"><img src="images/main/guide03.png" alt=""></div> -->
                </a></li>
                <li class="active"><a href="page/guide04.php" target="_blank">
                   <h1>광고성 메시지 수신자 동의<br>의무화 안내</h1>
                   <span>광고성 정보 수신자의 동의 확인해 주세요.</span>
                   <p>자세히 보기<img src="images/main/arrow_icon.png" alt=""></p>
+                  <!-- <div class="g-icon"><img src="images/main/guide04.png" alt=""></div> -->
                </a></li>
                <li class="active"><a href="page/guide05.php" target="_blank">
                   <h1>스팸필터링 서비스 확인안내</h1>
@@ -327,7 +332,7 @@
                <li>
                   <span>고객센터</span>
                   <h1>1599-1234</h1>
-                  <h2>운영시간 : 평일 09:00 ~ 18:00 (주말/공휴일 휴무)</h2>
+                  <h2>평일 09:00 ~ 18:00 (주말/공휴일 휴무)</h2>
                </li>
                <li><img src="images/main/cs_icon.gif" alt=""></li>
             </ul>

@@ -4,6 +4,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="../favicon.ico">
    <link rel="stylesheet" href="../css/reset.css">
    <link rel="stylesheet" href="../css/common.css">
    <link rel="stylesheet" href="../css/SUIT.css">
@@ -68,7 +69,7 @@
                     <div class="answer_con">
                       <p>엑셀로 전화번호 파일이 저장되어 있으신 경우, 쉽게 불러와 이용이 가능합니다.</p>
                       <p>&nbsp;</p>
-                      <p>▶&nbsp;문자대량전송 페이지에서 [엑셀파일 호출] 버튼으로, 엑셀파일로더를 이용하실 수 있습니다.</p>
+                      <p>▶&nbsp;문자전송 페이지에서 [엑셀파일 불러오기] 버튼으로, 엑셀파일로더를 이용하실 수 있습니다.</p>
                       <p>&nbsp;</p>
                       <p>문자프로의 엑셀로더는 <font color="red"><b>SMS업계 최초 ActiveX 비설치 방식</b></font>으로 개발되어, <u>모든 운영체제(window xp,7등)와 브라우저(익스플로러,크롬,사파리 등)에서 사용이 가능합니다.</u></p>
                       <p>&nbsp;</p>
@@ -91,7 +92,7 @@
                   <dd>
                     <div class="answer_con">
                       <p>
-                        영수증/세금계산서/카드전표 등의&nbsp;출력은 좌측 메뉴&nbsp;<strong><span style="COLOR: #ff0000">전자세금계산서 출력 </span></strong>으로 들어가시면 해당 분기의 내역 및 각종 증빙서류 출력이 가능합니다.<br><br>
+                        영수증/세금계산서/카드전표 등의&nbsp;출력은 로그인 후 좌측 메뉴&nbsp;<strong><span style="COLOR: #ff0000">전자세금계산서</span></strong>을 누르시면 해당 분기의 내역 및 각종 증빙서류 출력이 가능합니다.<br><br>
                         사업자 회원의 경우, 회원정보의 증빙서류란에 &nbsp;전자세금계산서로 선택되어 있으시면 다음날 자동발행하여 이메일로 전달해드리고 있습니다.<br><br>
                         단, 영수증/현금영수증/세금계산서 중 증빙서류는 한가지만 선택 가능하시오니, 이점 유의하여 주시기 바랍니다.<br><br>
                         기타 세금계산서 발급과 관련한 문의는 고객센터로 전화주시면 친철하게 안내해드립니다.
@@ -172,7 +173,7 @@
                   </dt>
                   <dd>
                     <div class="answer_con">
-                      <p>[회원가입] 버튼을 누르시고, 약관 동의 후 하단에 [개인회원]과, [사업자회원]으로 </p>
+                      <p>[회원가입] 버튼을 누르시고, 약관 동의 후 상단에 [개인회원]과, [사업자회원]으로 </p>
                       <p>가입절차가 구분되어 있습니다.</p>
                       <p><strong><span style="color: rgb(255, 0, 0);">[사업자 회원] </span></strong>버튼을 누르시어,<strong>&nbsp;[담당자 본인인증]</strong> 후 다음 입력 페이지에 회원정보를 입력해주세요.</p>
                       <p>&nbsp;</p>

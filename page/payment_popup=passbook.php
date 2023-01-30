@@ -4,6 +4,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="../favicon.ico">
    <link rel="stylesheet" href="../css/reset.css">
    <link rel="stylesheet" href="../css/common.css">
    <link rel="stylesheet" href="../css/SUIT.css">
@@ -39,7 +40,7 @@
                      </tr>
                   </tbody>
                </table>
-               <p>※ 결제신청요금은 VAT 포함금액입니다.<br>콘텐츠 결제는 서비스 개시이후 환불이 불가합니다.</p>
+               <p>※ 결제신청요금은 SMS기준 VAT 포함금액입니다.<br>콘텐츠 결제는 서비스 개시이후 환불이 불가합니다.</p>
                <div class="bank_box">
                   <span>무통장입금계좌</span>
                   <i>
@@ -47,7 +48,7 @@
                      <h1>607-01-118215</h1>
                      <span>예금주 : (주)이노포스트</span>
                   </i>
-                  <h2>상기계좌로 결제금액 <b>5,500,000</b> 원을 <input type="text" value="이노포스트" readonly> 으로 입금하시고<br><strong>입금확인</strong> 버튼을 눌러주세요.</h2>
+                  <h2>상기계좌로 결제금액 <b>5,500,000</b> 원을 <input type="text" value="이노포스트" readonly> 으로 입금하시고<br><strong class="t_blue">입금확인</strong> 버튼을 눌러주세요.</h2>
                </div>
             </div>
          </div>

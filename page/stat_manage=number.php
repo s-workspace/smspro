@@ -4,6 +4,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="../favicon.ico">
    <link rel="stylesheet" href="../css/reset.css">
    <link rel="stylesheet" href="../css/common.css">
    <link rel="stylesheet" href="../css/SUIT.css">
@@ -18,11 +19,8 @@
       <div class="wrap">
          <div class="title_top">
             <ul>
-               <li><a href="profile.php">회원기본 정보</a></li>
-               <li><a href="callback_manage.php">발신번호 관리</a></li>
-               <li><a href="brand.php">브랜드 관리</a></li>
-               <li class="this"><a href="stat_manage.php">통계내역</a></li>
-               <li><a href="security.php">보안설정</a></li>
+               <li><a href="msg_transmit.php">전송내역 관리</a></li>
+               <li class="this"><a href="stat_manage.php">전송내역 통계</a></li>
             </ul>
          </div>
          <div class="stat_box">
@@ -88,12 +86,12 @@
                      <th>SMS</th><th>LMS</th><th>MMS</th>
                   </tr>
                </thead>
-               <tbody>
+               <!-- <tbody>
                   <tr>
                      <td colspan="10" style="height: 300px;">등록된 내용이 없습니다.</td>
                   </tr>
-               </tbody>
-               <!-- <tbody>
+               </tbody> -->
+               <tbody>
                   <tr>
                      <td>2022년 1월 1일</td>
                      <td>132</td> 
@@ -454,15 +452,15 @@
                      <td>110</td> 
                      <td>0</td>
                   </tr>
-               </tbody> -->
-               <!-- <thead class="thead_bottom">
+               </tbody>
+               <thead class="thead_bottom">
                   <tr>
                      <th>합계</th>
                      <th colspan="3">227,205 건</th>
                      <th colspan="3">222,849 건</th>
                      <th colspan="3">4,356 건</th>
                   </tr>
-               </thead> -->
+               </thead>
             </table>
          </div>
       </div>

@@ -4,6 +4,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="../favicon.ico">
    <link rel="stylesheet" href="../css/reset.css">
    <link rel="stylesheet" href="../css/common.css">
    <link rel="stylesheet" href="../css/SUIT.css">
@@ -18,11 +19,8 @@
       <div class="wrap">
          <div class="title_top">
             <ul>
-               <li><a href="profile.php">회원기본 정보</a></li>
-               <li><a href="callback_manage.php">발신번호 관리</a></li>
-               <li><a href="brand.php">브랜드 관리</a></li>
-               <li class="this"><a href="stat_manage.php">통계내역</a></li>
-               <li><a href="security.php">보안설정</a></li>
+               <li><a href="msg_transmit.php">전송내역 관리</a></li>
+               <li class="this"><a href="stat_manage.php">전송내역 통계</a></li>
             </ul>
          </div>
          <div class="stat_box">
@@ -71,12 +69,12 @@
                      <th>잔여 포인트</th>
                   </tr>
                </thead>
-               <tbody>
+               <!-- <tbody>
                   <tr>
                      <td colspan="3" style="height: 300px;">등록된 내용이 없습니다.</td>
                   </tr>
-               </tbody>
-               <!-- <tbody>
+               </tbody> -->
+               <tbody>
                   <tr>
                      <td>2022년 1월 3일</td>
                      <td><span>500,000 P</span></td>
@@ -87,14 +85,14 @@
                      <td><span>1,000,000 P</span></td>
                      <td><span>1,516,000 P</span></td>
                   </tr>
-               </tbody> -->
-               <!-- <thead class="thead_bottom">
+               </tbody>
+               <thead class="thead_bottom">
                   <tr>
                      <th>합계</th>
                      <th><span>1,500,000 P</span></th>
                      <th><span></span></th>
                   </tr>
-               </thead> -->
+               </thead>
             </table>
          </div>
       </div>
