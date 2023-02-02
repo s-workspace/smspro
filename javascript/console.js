@@ -291,4 +291,10 @@ $(function(){
   });
   // 브랜드 연동 끝
 
+  // 요금선택
+  $('.payment_list li').click(function(){
+    $(this).addClass('this');
+    $(this).siblings().removeClass('this');
+  });
+
 });
