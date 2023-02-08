@@ -103,7 +103,7 @@
                      <li>부가 가치세(VAT) : <span>500,000 원</span></li>
                   </ul>
                   <i>
-                     <h1><span>총결제 금액</span><b><strong>5,500,000</strong>원</b></h1>
+                     <h1><span>* 총결제 금액(VAT 포함)</span><b><strong>5,500,000</strong>원</b></h1>
                      <a href="payment_popup=card.php" onclick="window.open(this.href, '', 'left=680, top=200, width=470, height=600'); return false;">결제하기</a>
                   </i>
                </div>

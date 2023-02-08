@@ -528,8 +528,8 @@ $(function(){
     $('.reply_num_con#all_num').toggleClass("on");
     $(this).toggleClass("on");
   });
-  $(".reply_num_con li.on").on("click",function(){
-    $(".reply_num_con li.on").removeClass("this");
+  $("#all_num li.on").on("click",function(){
+    $(this).siblings().removeClass("this");
     $(this).addClass("this");
   });
 

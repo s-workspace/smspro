@@ -69,11 +69,47 @@
    </div>
    <div class="section" id="s1">
       <div class="wrap">
-         <div class="logo_box">
+         <!-- <div class="logo_box">
             <h1>다양한 문자 서비스 하나로 모아</h1>
             <h2 class="active">메시지 통합 플랫폼 <b>문자프로</b>와 함께<br>다양한 메시지를 보내보세요.</h2>
             <img src="images/main/logo_box.png" alt="" class="active">
             <span>* 일반문자 전송 및 기업전용 RCS문자 전송이 가능합니다.</span>
+         </div> -->
+         <div class="service_wrap">
+            <h1>다양한 문자 서비스 하나로 모아</h1>
+            <h2 class="active">메시지 통합 플랫폼 <b>문자프로</b>와 함께<br>다양한 메시지를 보내보세요.</h2>
+            <ul>
+               <li class="active">
+                  <p><img src="images/main/sv_icon01.png" alt=""></p>
+                  <h1>충전금액 사용기한 무기한</h1>
+                  <span>한번 충전된 금액은 소진할때 까지<br>평생 무기한으로 사용이 가능합니다.</span>
+               </li>
+               <li class="active">
+                  <p><img src="images/main/sv_icon02.png" alt=""></p>
+                  <h1>080 수신거부 서비스 무료제공</h1>
+                  <span>광고메시지 전송 표기의무에 따라<br>080 수신거부 서비스를 제공해 드립니다.</span>
+               </li>
+               <li class="active">
+                  <p><img src="images/main/sv_icon03.png" alt=""></p>
+                  <h1>발송실패건 자동환급</h1>
+                  <span>문자 전송 실패시 자동으로 환급되어<br>불필요한 업무를 줄여 드립니다.</span>
+               </li>
+               <li class="active">
+                  <p><img src="images/main/sv_icon04.png" alt=""></p>
+                  <h1>RCS 문자 서비스</h1>
+                  <span>기업회원 전용 RCS 문자 서비스로<br>새로워진 문자 메시지를 보내보세요.</span>
+               </li>
+               <li class="active">
+                  <p><img src="images/main/sv_icon05.png" alt=""></p>
+                  <h1>초대량 문자 전송</h1>
+                  <span>문자프로는 빠르고 정확하게<br>한번에 30만건까지 보낼 수 있습니다.</span>
+               </li>
+               <li class="active">
+                  <p><img src="images/main/sv_icon06.png" alt=""></p>
+                  <h1>관리형 콘솔</h1>
+                  <span>문자전송, 요금사용 현황을 확인하고<br>더욱 체계적으로 관리해 보세요.</span>
+               </li>
+            </ul>
          </div>
       </div>
    </div>

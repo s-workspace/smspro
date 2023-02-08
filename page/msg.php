@@ -122,7 +122,7 @@
                   </div>
                   <div class="reply_num_con" id="all_num">
                      <ul>
-                        <li class="on"><span>01023456789</span></li>
+                        <li class="on this"><span>01023456789</span></li>
                         <li class="on"><span>01034567890</span></li>
                         <li></li>
                         <li></li>

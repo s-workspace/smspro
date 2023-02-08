@@ -629,8 +629,6 @@ svg { fill: var(--bg5); }
 .msg_wrap .reply_num_box .reply_num_con ul { display: flex; flex-wrap: wrap; gap: 10px; }
 .msg_wrap .reply_num_box .reply_num_con ul li { flex: 1 1 45%; height: 35px; line-height: 33px; border: 1px solid #ccc; padding: 0 10px; box-sizing: border-box; font-size: 15px; }
 .msg_wrap .reply_num_box .reply_num_con ul li.on { background-color: var(--bg2); cursor: pointer; }
-.msg_wrap .reply_num_box .reply_num_con ul li.on:hover { background-color: var(--lightyellow); }
-.msg_wrap .reply_num_box .reply_num_con ul li.this { color: var(--blue); background-color: var(--lightblue) !important; color: var(--text2) !important; }
 .msg_wrap .reply_num_box .reply_num_con#often_num { display: flex; align-items: center; gap: 10px; margin-top: 10px; }
 .msg_wrap .reply_num_box .reply_num_con#often_num ul li { width: 155px; }
 .msg_wrap .reply_num_box .reply_num_con #all_num_btn { display: flex; width: 140px; align-items: center; cursor: pointer; position: relative; }
@@ -640,6 +638,8 @@ svg { fill: var(--bg5); }
 .msg_wrap .reply_num_box .reply_num_con #all_num_btn.on::before { top: 4px; border-top: none; border-bottom-color: #222; }
 .msg_wrap .reply_num_box .reply_num_con#all_num ul { display: none; }
 .msg_wrap .reply_num_box .reply_num_con#all_num.on ul { display: flex; margin-top: 10px; }
+.msg_wrap .reply_num_box .reply_num_con#all_num li.on.this { color: var(--blue); background-color: var(--lightblue) !important; color: var(--text2) !important; }
+.msg_wrap .reply_num_box .reply_num_con#all_num li.on:hover { background-color: var(--lightyellow); }
 
 .msg_bottom { display: inline-block; width: 100%; height: 200px; }
 .msg_bottom .send_time_wrap { position: relative; }
@@ -1030,7 +1030,7 @@ svg { fill: var(--bg5); }
 .payment_wrap .total_payment ul { display: flex; flex-direction: column; gap: 15px 0; }
 .payment_wrap .total_payment ul > h1 { font-size: 18px; font-weight: 500; margin-bottom: 20px; }
 .payment_wrap .total_payment ul li { display: flex; justify-content: space-between; font-size: 15px; font-weight: 500; }
-.payment_wrap .total_payment i { display: flex; flex-direction: column; gap: 20px; }
+.payment_wrap .total_payment i { display: flex; flex-direction: column; gap: 20px; border-top: 1px solid var(--border); padding-top: 20px; }
 .payment_wrap .total_payment i h1 { display: flex; flex-direction: column; align-items: flex-end; gap: 10px; }
 .payment_wrap .total_payment i h1 span { font-size: 15px; font-weight: 500; }
 .payment_wrap .total_payment i h1 b strong { font-size: 24px; font-weight: 600; margin-right: 5px; color: var(--s_text2); }

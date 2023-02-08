@@ -51,8 +51,8 @@ $(function (){
      $(".nav").addClass('on');
      var offsetTop = $('.active').offset().top;
      scrollTop = $(window).scrollTop();
-     if(scrollTop > offsetTop) $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
-     else $('html,body').animate({scrollTop:$(this.hash).offset().top - 40}, 500);
+     if(scrollTop > offsetTop) $('html,body').animate({scrollTop:$(this.hash).offset().top + 20}, 500);
+     else $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
   });
   // 네비 이벤트 끝
 
