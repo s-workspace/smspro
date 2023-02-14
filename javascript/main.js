@@ -1,4 +1,24 @@
 $(function (){
+
+   // 서비스 소개
+   var swiper = new Swiper(".msg_kind_wrap", {
+      slidesPerView: 1,
+      spaceBetween: 100,
+      speed: 1000,
+      autoplay: {
+         delay: 6000,
+         disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+    // 서비스 소개 끝
       
   // 체험하기
   $('.inner_close span').click(function(){

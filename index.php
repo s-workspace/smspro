@@ -15,27 +15,6 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
 <script src="javascript/main.js"></script>
-<script>
-   $(function (){
-    var swiper = new Swiper(".msg_kind_wrap", {
-      slidesPerView: 1,
-      spaceBetween: 100,
-      speed: 1000,
-      autoplay: {
-         delay: 6000,
-         disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-   });
-</script>
 <body>
    <div class="move_top">
       <span><img src="images/main/arrow_top.png" alt=""></span>
