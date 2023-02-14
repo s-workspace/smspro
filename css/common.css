@@ -451,7 +451,7 @@ svg { fill: var(--bg5); }
 .container .title { display: inline-flex; justify-content: space-between; align-items: center; width: 100%; border-bottom: 1px solid var(--border2); padding-bottom: 10px; margin-top: 30px; margin-bottom: 10px; position: relative; }
 .container .title > h1 { font-size: 18px; font-weight: 500; color: var(--text2); letter-spacing: -0.4px; display: flex; align-items: flex-end; }
 .container .title > h1 img { margin-right: 10px; }
-.container .title > span { display: flex; align-items: center; font-size: 13px; }
+.container .title > span { display: flex; align-items: center; font-size: 13px; font-weight: 500; }
 .container .title > span b { margin-left: 5px; cursor: pointer; height: 16px; }
 .container .title > span b:hover .info_popup { display: block; }
 .container .title > span .info_popup { position: absolute; background-color: var(--bg2); border: 1px solid #333; padding: 10px; right: 0; bottom: 40px; display: none; }
@@ -622,7 +622,7 @@ svg { fill: var(--bg5); }
 .msg_wrap .reply_num_box .reply_num_con_wrap i { display: flex; align-items: center; gap: 5px; }
 .msg_wrap .reply_num_box .reply_num_con_wrap i h1 { font-size: 15px; font-weight: 500; }
 .msg_wrap .reply_num_box .reply_num_con_wrap .num_serach_box { position: relative; }
-.msg_wrap .reply_num_box .reply_num_con_wrap .num_serach_box #num_serach { width: 155px; height: 33px; border: none; border-bottom: 1px solid var(--border); background-color: transparent; font-size: 15px; }
+.msg_wrap .reply_num_box .reply_num_con_wrap .num_serach_box #num_serach { width: 160px; height: 33px; border: none; border-bottom: 1px solid var(--border); background-color: transparent; font-size: 15px; }
 .msg_wrap .reply_num_box .reply_num_con_wrap .num_serach_box #num_serach.focus { border: transparent !important; border-bottom: 1px solid rgba(102, 175, 233) !important; box-shadow: none !important; }
 .msg_wrap .reply_num_box .reply_num_con_wrap .num_serach_box .num_serach_list { position: absolute; left:0; bottom: -45px; width: 200px; max-height: 200px; overflow-y: auto; background-color: var(--bg2); box-shadow: 0px 1px 6px rgba(0,0,0,0.15); border-radius: 5px; display: none; z-index: 1; }
 .msg_wrap .reply_num_box .reply_num_con_wrap .num_serach_box .num_serach_list li { color: var(--text2); font-size: 14px; font-weight: 500; line-height: 40px; padding: 0 10px; cursor: pointer; }

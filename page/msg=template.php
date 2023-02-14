@@ -15,17 +15,6 @@
 <script src="../javascript/msg.js"></script>
 <script src="../javascript/text_t1.js"></script>
 <body>
-   <div class="modal none">
-      <div class="modal_con">
-         <div class="modal_img">
-
-         </div>
-         <div class="modal_bottom">
-            <a href="">자세히보기</a>
-            <a href="">닫기</a>
-         </div>
-      </div>
-   </div>
    <!-- 변수 등록 가이드 -->
    <div class="VarGuide_layer layer">
       <h1>변수 등록 가이드</h1>
@@ -94,6 +83,7 @@
    </div>
    <!-- 전송레이어 끝 -->
 
+   <?php include 'modal.php'; ?>
    <?php include 'sh_layer.php'; ?>
    <?php include 'variable_layer.php'; ?>
    <?php include 'msgload_layer=rec.php'; ?>
@@ -131,17 +121,39 @@
                         <li><a href="callback_manage.php">발신번호 관리</a></li>
                      </ul>
                   </div>
-                  <div class="reply_num_con" id="often_num">
-                     <h1>발신번호(보내는사람)</h1>
-                     <ul>
-                        <li class="on this"><span>01012345678</span></li>
-                     </ul>
-                     <h1 id="all_num_btn">발신번호 전체 보기</h1>
+                  <div class="reply_num_con_wrap">
+                     <i>
+                        <h1>발신번호(보내는사람)</h1>
+                        <div class="num_serach_box">
+                           <input type="text" id="num_serach" placeholder="발신번호 검색 또는 입력">
+                           <ul class="num_serach_list">
+                              <li>일치하는 발신번호가 없습니다.</li>
+                           </ul>
+                        </div>
+                     </i>
+                     <i>
+                        <span class="num_plus" id="all_num_btn">전체 발신번호</span>
+                        <span class="num_plus" id="often_num_btn">자주쓰는 발신번호</span>
+                     </i>
                   </div>
                   <div class="reply_num_con" id="all_num">
-                     <ul>
+                     <ul class="num_list">
                         <li class="on this"><span>01023456789</span></li>
                         <li class="on"><span>01034567890</span></li>
+                        <li class="on"><span>01045678910</span></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                     </ul>
+                  </div>
+                  <div class="reply_num_con" id="often_num">
+                     <ul class="num_list">
+                        <li class="on"><span>01023456789</span></li>
+                        <li></li>
                         <li></li>
                         <li></li>
                         <li></li>
@@ -156,6 +168,14 @@
                <div class="msg_content msg_write">
                   <div class="title">
                      <h1><img src="../images/msg/write_icon.png" alt="">메시지 작성</h1>
+                     <span>브랜드 연동하기
+                        <b>
+                           <img src="../images/common/info_icon.png" alt="">
+                           <div class="info_popup">
+                              <span>브랜드 관리 페이지에서<br>연동된 브랜드 목록을 불러옵니다.</span>
+                           </div>
+                        </b>
+                     </span>
                   </div>
                   <div class="msg_wbox">
                      <div class="rcs_box">
@@ -389,12 +409,12 @@
                   <div class="title">
                      <h1><img src="../images/msg/callback_icon.png" alt="">수신번호 입력</h1>
                      <span>엑셀에서 복사해오기
-                     <b>
-                        <img src="../images/common/info_icon.png" alt="">
-                        <div class="info_popup">
-                           <span>엑셀파일에서 해당열 복사 후<br>전화번호/이름 입력란에 붙여넣기 가능</span>
-                        </div>
-                     </b>
+                        <b>
+                           <img src="../images/common/info_icon.png" alt="">
+                           <div class="info_popup">
+                              <span>엑셀파일에서 해당열 복사 후<br>전화번호/이름 입력란에 붙여넣기 가능</span>
+                           </div>
+                        </b>
                      </span>
                   </div>
                   <div class="rec_box">

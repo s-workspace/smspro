@@ -121,15 +121,39 @@
                         <li><a href="callback_manage.php">발신번호 관리</a></li>
                      </ul>
                   </div>
-                  <div class="reply_num_con" id="often_num">
-                     <h1>발신번호(보내는사람)</h1>
-                     <input type="text" id="num_serach" placeholder="발신번호 검색 또는 입력">
-                     <h1 id="all_num_btn">발신번호 전체 보기</h1>
+                  <div class="reply_num_con_wrap">
+                     <i>
+                        <h1>발신번호(보내는사람)</h1>
+                        <div class="num_serach_box">
+                           <input type="text" id="num_serach" placeholder="발신번호 검색 또는 입력">
+                           <ul class="num_serach_list">
+                              <li>일치하는 발신번호가 없습니다.</li>
+                           </ul>
+                        </div>
+                     </i>
+                     <i>
+                        <span class="num_plus" id="all_num_btn">전체 발신번호</span>
+                        <span class="num_plus" id="often_num_btn">자주쓰는 발신번호</span>
+                     </i>
                   </div>
                   <div class="reply_num_con" id="all_num">
-                     <ul>
+                     <ul class="num_list">
                         <li class="on this"><span>01023456789</span></li>
                         <li class="on"><span>01034567890</span></li>
+                        <li class="on"><span>01045678910</span></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                     </ul>
+                  </div>
+                  <div class="reply_num_con" id="often_num">
+                     <ul class="num_list">
+                        <li class="on"><span>01023456789</span></li>
+                        <li></li>
                         <li></li>
                         <li></li>
                         <li></li>

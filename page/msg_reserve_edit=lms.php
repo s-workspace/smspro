@@ -4,6 +4,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="../favicon.ico">
    <link rel="stylesheet" href="../css/reset.css">
    <link rel="stylesheet" href="../css/common.css">
    <link rel="stylesheet" href="../css/SUIT.css">
@@ -13,7 +14,7 @@
 <body style="min-width:660px; max-width:660px;">
    <div class="popup_wrap">
       <div class="popup_title">
-         <h1>예약내역 수정하기</h1>
+         <h1>예약내역 수정하기(일반문자)</h1>
       </div>
       <div class="popup_content">
          <div class="detail_top" style="border-bottom: 1px dashed #ccc; padding-bottom: 10px; margin-bottom: 10px;">
@@ -116,7 +117,7 @@
                      </li>
                   </ul>
                </div>
-               <div class="reserve_notice" style="height:80px;">
+               <div class="reserve_notice" style="height:110px;">
                   <ul>
                      <li>- <strong>예약시간 30분 전</strong> 예약내용/회신번호/예약시간을 수정하실 수 있습니다.</li>
                      <li>- <span class="t_blue">예약된 수신번호 수정은 불가하오니, 예약 취소 후 재예약</span>하시기 바랍니다.</li>

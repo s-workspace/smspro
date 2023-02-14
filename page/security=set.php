@@ -4,6 +4,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="../favicon.ico">
    <link rel="stylesheet" href="../css/reset.css">
    <link rel="stylesheet" href="../css/common.css">
    <link rel="stylesheet" href="../css/SUIT.css">
@@ -21,7 +22,6 @@
                <li><a href="profile.php">회원기본 정보</a></li>
                <li><a href="callback_manage.php">발신번호 관리</a></li>
                <li><a href="brand.php">브랜드 관리</a></li>
-               <li><a href="stat_manage.php">통계내역</a></li>
                <li class="this"><a href="security.php">보안설정</a></li>
             </ul>
          </div>

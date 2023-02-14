@@ -4,6 +4,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="../favicon.ico">
    <link rel="stylesheet" href="../css/reset.css">
    <link rel="stylesheet" href="../css/common.css">
    <link rel="stylesheet" href="../css/SUIT.css">
@@ -35,8 +36,8 @@
          </div>
          <div class="nt_wrap">
             <ul>
-               <li class="list_none">등록된 내용이 없습니다.</li>
-               <!-- <li><span><b>필독</b></span><i><a href="notice=view.php"><strong>회신번호 사전등록제 적용 안내</strong></a></i><strong>2022-11-01</strong><h1>431</h1></li>
+               <!-- <li class="list_none">등록된 내용이 없습니다.</li> -->
+               <li><span><b>필독</b></span><i><a href="notice=view.php"><strong>회신번호 사전등록제 적용 안내</strong></a></i><strong>2022-11-01</strong><h1>431</h1></li>
                <li><span><b>필독</b></span><i><a href=""><strong>광고메시지 표기의무 강화 안내</strong></a></i><strong>2022-11-01</strong><h1>241</h1></li>
                <li><span>10</span><i><a href="">2022년 10월분 세금계산서 발행마감 안내(~11/10)</a></i><strong>2022-11-01</strong><h1>1</h1></li>
                <li><span>9</span><i><a href="">2022년 10월분 세금계산서 발행마감 안내(~11/10)</a></i><strong>2022-11-01</strong><h1>1</h1></li>
@@ -47,7 +48,7 @@
                <li><span>4</span><i><a href="">2022년 10월분 세금계산서 발행마감 안내(~11/10)</a></i><strong>2022-11-01</strong><h1>1</h1></li>
                <li><span>3</span><i><a href="">2022년 10월분 세금계산서 발행마감 안내(~11/10)</a></i><strong>2022-11-01</strong><h1>14</h1></li>
                <li><span>2</span><i><a href="">2022년 10월분 세금계산서 발행마감 안내(~11/10)</a></i><strong>2022-11-01</strong><h1>12</h1></li>
-               <li><span>1</span><i><a href="">2022년 10월분 세금계산서 발행마감 안내(~11/10)</a></i><strong>2022-11-01</strong><h1>31</h1></li> -->
+               <li><span>1</span><i><a href="">2022년 10월분 세금계산서 발행마감 안내(~11/10)</a></i><strong>2022-11-01</strong><h1>31</h1></li>
             </ul>
          </div>
          <div class="page">

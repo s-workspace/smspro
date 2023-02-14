@@ -4,6 +4,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="../favicon.ico">
    <link rel="stylesheet" href="../css/reset.css">
    <link rel="stylesheet" href="../css/common.css">
    <link rel="stylesheet" href="../css/SUIT.css">
@@ -12,6 +13,7 @@
 <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
 <script src="../javascript/console.js"></script>
 <script src="../javascript/msg.js"></script>
+<script src="../javascript/byte_t3.js"></script>
 <body>
    <!-- 수신거부 처리결과 팝업 -->
    <div class="layer_popup">
@@ -19,44 +21,6 @@
       <span class="layer_popup_close"><img src="../images/common/close_icon.png" alt=""></span>
    </div>
    <!-- 수신거부 처리결과 팝업 -->
-
-   <!-- 버튼 생성 레이어 -->
-   <div class="btn_layer layer">
-      <h1>버튼 생성</h1>
-      <div class="input_layer">
-         <i>
-            <p>버튼명</p>
-            <input type="text" id="btnName" placeholder="이름을 입력해 주세요.">
-         </i>
-         <i>
-            <p>버튼타입</p>
-            <div class="select_box">
-               <span></span>
-               <ul>
-                  <li id="url_sel">URL 링크</li>
-                  <li id="num_sel">전화연결</li>
-               </ul>
-            </div>
-         </i>
-      </div>
-      <div class="input_layer sub_input" id="url">
-         <i>
-            <p>URL 주소</p>
-            <input type="text" placeholder="https://를 포함한 URL을 입력해 주세요.">
-         </i>
-      </div>
-      <div class="input_layer sub_input" id="num">
-         <i>
-            <p>전화연결</p>
-            <input type="text" placeholder="전화번호를 입력해 주세요.">
-         </i>
-      </div>
-      <div class="layer_bottom">
-         <a href="" class="get_btn">추가</a>
-         <a href="" class="layer_cancel">취소</a>
-      </div>
-   </div>
-   <!-- 버튼 생성 레이어 끝 -->
 
    <!-- 변수 등록 가이드 -->
    <div class="VarGuide_layer layer">
@@ -126,6 +90,7 @@
    </div>
    <!-- 전송레이어 끝 -->
 
+   <?php include 'modal.php'; ?>
    <?php include 'sh_layer.php'; ?>
    <?php include 'variable_layer.php'; ?>
    <?php include 'msgload_layer=rec.php'; ?>
@@ -151,17 +116,39 @@
                         <li><a href="callback_manage.php">발신번호 관리</a></li>
                      </ul>
                   </div>
-                  <div class="reply_num_con" id="often_num">
-                     <h1>발신번호(보내는사람)</h1>
-                     <ul>
-                        <li class="on this"><span>01012345678</span></li>
-                     </ul>
-                     <h1 id="all_num_btn">발신번호 전체 보기</h1>
+                  <div class="reply_num_con_wrap">
+                     <i>
+                        <h1>발신번호(보내는사람)</h1>
+                        <div class="num_serach_box">
+                           <input type="text" id="num_serach" placeholder="발신번호 검색 또는 입력">
+                           <ul class="num_serach_list">
+                              <li>일치하는 발신번호가 없습니다.</li>
+                           </ul>
+                        </div>
+                     </i>
+                     <i>
+                        <span class="num_plus" id="all_num_btn">전체 발신번호</span>
+                        <span class="num_plus" id="often_num_btn">자주쓰는 발신번호</span>
+                     </i>
                   </div>
                   <div class="reply_num_con" id="all_num">
-                     <ul>
-                        <li class="on"><span>01012345678</span></li>
-                        <li class="on"><span>01012345678</span></li>
+                     <ul class="num_list">
+                        <li class="on this"><span>01023456789</span></li>
+                        <li class="on"><span>01034567890</span></li>
+                        <li class="on"><span>01045678910</span></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                     </ul>
+                  </div>
+                  <div class="reply_num_con" id="often_num">
+                     <ul class="num_list">
+                        <li class="on"><span>01023456789</span></li>
+                        <li></li>
                         <li></li>
                         <li></li>
                         <li></li>
@@ -178,47 +165,18 @@
                      <h1><img src="../images/msg/write_icon.png" alt="">메시지 작성</h1>
                   </div>
                   <div class="msg_wbox">
-                     <div class="rcs_box">
-                        <div class="rcs_box_con">
-                           <i>
-                              <p>브랜드 선택</p>
-                              <div class="select_box brand_sel">
-                                 <span>선택안함(일반문자 전송)</span>
-                                 <ul>
-                                    <li id="brand_none">선택안함(일반문자 전송)</li>
-                                    <li><a href="">브랜드 연동</a></li>
-                                    <li class="target">브랜드1</li>
-                                    <li class="target">브랜드2</li>
-                                 </ul>
-                              </div>
-                           </i>
-                           <i>
-                              <p>템플릿 선택</p>
-                              <div class="select_box template_sel">
-                                 <span>선택안함(직접입력)</span>
-                                 <ul>
-                                    <li>선택안함(직접입력)</li>
-                                    <li>템플릿1</li>
-                                    <li>템플릿2</li>
-                                 </ul>
-                              </div>
-                           </i>
-                        </div>
-                     </div>
                      <div class="msg_table">
                         <i>
                            <div class="msg_tit">
-                              <input type="text" placeholder="제목 입력(20자 이내 / SMS인 경우 제목 전송불가)" maxlength="20">
+                              <input id="msg_tit_input" type="text" placeholder="제목 입력(20자 이내 / SMS인 경우 제목 전송불가)" maxlength="20">
                            </div>
                            <div class="msg_text sms">
-                              <h1 class="type01 none">[선거운동정보]</h1>
-                              <h1 class="type02 none">(광고)</h1>
+                              <h1 class="type01 none">(광고)</h1>
                               <textarea name="" id="text_box" placeholder="내용 입력
 - 90Byte 초과시 LMS로 자동 전환
 - LMS 전환시 최대 2000Byte 까지 입력 가능
 - 이미지 업로드시 MMS로 자동 전환">20**년 **월 **일 귀하가 요청하신 수신거부가 정상처리되었습니다.(업체명)</textarea>
-                              <h2 class="type01 none">홍길동<br>불법수집정보 신고 118<br>무료수신거부 0808718744</h2>
-                              <h2 class="type02 none">무료수신거부 0808718744</h2>
+                              <h2 class="type01 none">무료수신거부 0808718744</h2>
                               <div class="t_byte">
                                  <b>71</b><span>/90Byte</span><h1 class="msg_t1">SMS 단문</h1><h1 class="msg_t2">LMS 장문</h1><h1 class="msg_t3">MMS 이미지</h1>
                               </div>
@@ -235,93 +193,22 @@
                            </ul>
                         </div>
                      </div>
-                     <div class="img_upload">
-                        <h1><img src="../images/common/addbox_icon.png" alt="">이미지 업로드</h1>
-                        <ul>
-                           <li>
-                              <dl>
-                                 <dd><p></p></dd>
-                                 <dd><p></p></dd>
-                                 <dd><p></p></dd>
-                              </dl>
-                           </li>
-                           <li><span>※ 이미지는 최대 3장, jpg/jpeg 파일만 첨부 가능</span></li>
-                           <li><span>※ 미리보기 화면에 업로드된 이미지 클릭시 삭제</span></li>
-                        </ul>
-                     </div>
-                     <div class="btn_upload">
-                        <h1><img src="../images/common/addbox_icon.png" alt="">버튼 추가</h1>
-                        <ul>
-                           <li>
-                              <a href="" class="add_btn">버튼 생성하기</a>
-                           </li>
-                           <li><span>※ 버튼 최대 3개 추가 가능</span></li>
-                           <li><span>※ 미리보기 화면에 추가된 버튼 클릭시 삭제</span></li>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-               <div class="msg_type_wrap">
-                  <div class="title">
-                     <h1><img src="../images/msg/msg_icon.png" alt="">메시지 유형 선택</h1>
-                     <ul>
-                     <li><a href="080_service.php" target="_blank">080 수신거부 서비스 신청</a></li>
-                     </ul>
-                  </div>
-                  <div class="check_con mt10" id="msgSet01_wrap">
-                     <input type="checkbox" name="" value="" id="msgSet01">
-                     <label for="msgSet01"><span>선거메시지 전송</span></label>
-                     <p>- <b>선거운동정보</b> + 후보자번호 + 불법수집 정보 신고 118 + <b>080번호</b> 삽입</p>
-                  </div>
-                  <div class="check_con mt20" id="msgSet02_wrap">
-                     <input type="checkbox" name="" value="" id="msgSet02">
-                     <label for="msgSet02"><span>광고메시지 전송</span></label>
-                     <p>- <b>(광고) + 080번호</b> 자동 삽입</p>
-                  </div>
-                  <div class="check_con mt20">
-                     <input type="checkbox" name="" value="" id="msgSet03">
-                     <label for="msgSet03"><span>내 문자함에 자동 저장</span></label>
-                     <p>- 메시지 관리 → <b>[나의 메시지]</b> 저장</p>
-                  </div>
-                  <div class="check_con mt20">
-                     <input type="checkbox" name="" value="" id="msgSet04">
-                     <label for="msgSet04"><span>실패시 대체문자 전송</span></label>
-                     <p>- <b>RCS 전송 실패시</b>일반문자로 대체 전송</p>
-                  </div>
-               </div>
-               <div class="msg_content return_write">
-                  <div class="title">
-                     <h1><img src="../images/msg/write_icon.png" alt="">대체문자 작성</h1>
-                  </div>
-                  <div class="msg_wbox">
-                     <div class="msg_table">
-                        <i>
-                           <div class="msg_tit">
-                              <input type="text" placeholder="제목 입력(20자 이내 / SMS인 경우 제목 전송불가)" maxlength="20">
-                           </div>
-                           <div class="msg_text sms">
-                              <h1 class="type01 none">[선거운동정보]</h1>
-                              <h1 class="type02 none">(광고)</h1>
-                              <textarea name="" id="text_box2" placeholder="내용 입력
-- 90Byte 초과시 LMS로 자동 전환
-- LMS 전환시 최대 2000Byte 까지 입력 가능
-- 이미지 업로드시 MMS로 자동 전환">20**년 **월 **일 귀하가 요청하신 수신거부가 정상처리되었습니다.(업체명)</textarea>
-                              <h2 class="type01 none">홍길동<br>불법수집정보 신고 118<br>무료수신거부 0808718744</h2>
-                              <h2 class="type02 none">무료수신거부 0808718744</h2>
-                              <div class="t_byte">
-                                 <b>71</b><span>/90Byte</span><h1 class="msg_t1">SMS 단문</h1><h1 class="msg_t2">LMS 장문</h1><h1 class="msg_t3">MMS 이미지</h1>
-                              </div>
-                           </div>
-                        </i>
-                        <div class="btn_box">
+                     <div class="msg_type_wrap">
+                        <div class="title">
+                           <h1><img src="../images/msg/msg_icon.png" alt="">메시지 유형 선택</h1>
                            <ul>
-                              <li><a href="" class="myMsg">메시지 불러오기</a></li>
-                              <li><a href="" class="recMsg">전송내역 불러오기</a></li>
-                              <li><a href="">내용저장</a></li>
-                              <li><a href="" id="return_btn2">다시쓰기</a></li>
-                              <li><a href="" class="action_btn sh_btn2">특수문자</a></li>
-                              <li><a href="" class="action_btn variable_btn2">#{변수}</a></li>
+                           <li><a href="080_service.php" target="_blank">080 수신거부 서비스 신청</a></li>
                            </ul>
+                        </div>
+                        <div class="check_con mt10" id="msgSet01_wrap">
+                           <input type="checkbox" name="" value="" id="msgSet01">
+                           <label for="msgSet01"><span>광고메시지 전송</span></label>
+                           <p>- <b>(광고) + 080번호</b> 자동 삽입</p>
+                        </div>
+                        <div class="check_con mt20">
+                           <input type="checkbox" name="" value="" id="msgSet02">
+                           <label for="msgSet02"><span>내 문자함에 자동 저장</span></label>
+                           <p>- 메시지 관리 → <b>[나의 메시지]</b> 저장</p>
                         </div>
                      </div>
                      <div class="img_upload">
@@ -404,12 +291,9 @@
                         <div class="image_preview"><img id="img"/></div>
                         <div class="msg_view_text">
                            <h1 class="msg_title"></h1>
-                           <h1 class="ads01 refusal_none">[선거운동정보]</h1>
-                           <h1 class="ads02 refusal_none">(광고)</h1>
+                           <h1 class="ads01 refusal_none">(광고)</h1>
                            <span>20**년 **월 **일 귀하가 요청하신 수신거부가 정상처리되었습니다.(업체명)</span>
-                           <h2 class="ads01 refusal_none">홍길동<br>불법수집정보 신고 118<br>무료수신거부 0808718744</h2>
-                           <h2 class="ads02 refusal_none">무료수신거부 0808718744</h2>
-                           <div class="btn_view"></div>
+                           <h2 class="ads01 refusal_none">무료수신거부 0808718744</h2>
                         </div>
                      </div>
                   </div>

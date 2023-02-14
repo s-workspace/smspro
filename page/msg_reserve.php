@@ -4,6 +4,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="../favicon.ico">
    <link rel="stylesheet" href="../css/reset.css">
    <link rel="stylesheet" href="../css/common.css">
    <link rel="stylesheet" href="../css/SUIT.css">
@@ -235,10 +236,10 @@
                   </tr>
                </thead>
                <tbody>
-                  <tr>
-                     <td colspan="9" style="height:300px;">전송내역이 없습니다.</td>
-                  </tr>
                   <!-- <tr>
+                     <td colspan="9" style="height:300px;">전송내역이 없습니다.</td>
+                  </tr> -->
+                  <tr>
                      <td><input type="checkbox" name="" value=""></td>
                      <td>1</td>
                      <td>RCS문자</td>
@@ -249,18 +250,6 @@
                      <td class="t_left">12312312312312123123123123123123123123123123231231231231231231231231231231231</td>
                      <td><a href="msg_reserve_edit=rcs.php" onclick="window.open(this.href, '', 'left=560, top=300, width=660, height=400'); return false;"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"><path d="m15.812 7.312-3-3.02.959-.938q.396-.396.948-.396.552 0 .948.396l1.104 1.104q.375.396.375.969t-.396.948Zm-.916.917-8.854 8.854h-3v-3l8.854-8.854Z"/></svg></a></td>
                      <td><a href="msg_reserve_popup=rcs.php" onclick="window.open(this.href, '', 'left=560, top=160, width=660, height=650'); return false;"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"><path d="m15.938 17.188-5.021-5.021q-.625.437-1.365.698-.74.26-1.594.26-2.125 0-3.614-1.5-1.49-1.5-1.49-3.625t1.49-3.625q1.489-1.5 3.614-1.5t3.625 1.5q1.5 1.5 1.5 3.625 0 .854-.25 1.594-.25.739-.687 1.344l5 5.02Zm-7.98-5.813q1.417 0 2.407-.979.989-.979.989-2.396 0-1.417-.989-2.396-.99-.979-2.407-.979-1.416 0-2.396.979-.979.979-.979 2.396 0 1.417.979 2.396.98.979 2.396.979Z"></path></svg></a></td>
-                  </tr>
-                  <tr>
-                     <td><input type="checkbox" name="" value=""></td>
-                     <td>1</td>
-                     <td>RCS문자</td>
-                     <td><span class="t_sms">SMS(단문)</span></td>
-                     <td>01012345678 외 <strong>0건</strong><br><span class="t_gray">/ 01012345678</span></td>
-                     <td>2021-12-31 <br><span class="t_gray">11:32:12</span></td>
-                     <td>2021-12-31 <br><span class="t_gray">11:32:12</span></td>
-                     <td class="t_left">12312312312312123123123123123123123123123123231231231231231231231231231231231</td>
-                     <td><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"><path d="m15.812 7.312-3-3.02.959-.938q.396-.396.948-.396.552 0 .948.396l1.104 1.104q.375.396.375.969t-.396.948Zm-.916.917-8.854 8.854h-3v-3l8.854-8.854Z"/></svg></a></td>
-                     <td><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"><path d="m15.938 17.188-5.021-5.021q-.625.437-1.365.698-.74.26-1.594.26-2.125 0-3.614-1.5-1.49-1.5-1.49-3.625t1.49-3.625q1.489-1.5 3.614-1.5t3.625 1.5q1.5 1.5 1.5 3.625 0 .854-.25 1.594-.25.739-.687 1.344l5 5.02Zm-7.98-5.813q1.417 0 2.407-.979.989-.979.989-2.396 0-1.417-.989-2.396-.99-.979-2.407-.979-1.416 0-2.396.979-.979.979-.979 2.396 0 1.417.979 2.396.98.979 2.396.979Z"></path></svg></a></td>
                   </tr>
                   <tr>
                      <td><input type="checkbox" name="" value=""></td>
@@ -278,18 +267,6 @@
                      <td><input type="checkbox" name="" value=""></td>
                      <td>1</td>
                      <td>RCS문자</td>
-                     <td><span class="t_lms">LMS(장문)</span></td>
-                     <td>01012345678 외 <strong>0건</strong><br><span class="t_gray">/ 01012345678</span></td>
-                     <td>2021-12-31 <br><span class="t_gray">11:32:12</span></td>
-                     <td>2021-12-31 <br><span class="t_gray">11:32:12</span></td>
-                     <td class="t_left"></td>
-                     <td><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"><path d="m15.812 7.312-3-3.02.959-.938q.396-.396.948-.396.552 0 .948.396l1.104 1.104q.375.396.375.969t-.396.948Zm-.916.917-8.854 8.854h-3v-3l8.854-8.854Z"/></svg></a></td>
-                     <td><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"><path d="m15.938 17.188-5.021-5.021q-.625.437-1.365.698-.74.26-1.594.26-2.125 0-3.614-1.5-1.49-1.5-1.49-3.625t1.49-3.625q1.489-1.5 3.614-1.5t3.625 1.5q1.5 1.5 1.5 3.625 0 .854-.25 1.594-.25.739-.687 1.344l5 5.02Zm-7.98-5.813q1.417 0 2.407-.979.989-.979.989-2.396 0-1.417-.989-2.396-.99-.979-2.407-.979-1.416 0-2.396.979-.979.979-.979 2.396 0 1.417.979 2.396.98.979 2.396.979Z"></path></svg></a></td>
-                  </tr>
-                  <tr>
-                     <td><input type="checkbox" name="" value=""></td>
-                     <td>1</td>
-                     <td>RCS문자</td>
                      <td><span class="t_mms">MMS(이미지)</span></td>
                      <td>01012345678 외 <strong>0건</strong><br><span class="t_gray">/ 01012345678</span></td>
                      <td>2021-12-31 <br><span class="t_gray">11:32:12</span></td>
@@ -298,18 +275,6 @@
                      <td><a href="msg_reserve_edit=rcs_mms.php" onclick="window.open(this.href, '', 'left=560, top=300, width=660, height=400'); return false;"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"><path d="m15.812 7.312-3-3.02.959-.938q.396-.396.948-.396.552 0 .948.396l1.104 1.104q.375.396.375.969t-.396.948Zm-.916.917-8.854 8.854h-3v-3l8.854-8.854Z"/></svg></a></td>
                      <td><a href="msg_reserve_popup=rcs_mms.php" onclick="window.open(this.href, '', 'left=560, top=160, width=660, height=650'); return false;"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"><path d="m15.938 17.188-5.021-5.021q-.625.437-1.365.698-.74.26-1.594.26-2.125 0-3.614-1.5-1.49-1.5-1.49-3.625t1.49-3.625q1.489-1.5 3.614-1.5t3.625 1.5q1.5 1.5 1.5 3.625 0 .854-.25 1.594-.25.739-.687 1.344l5 5.02Zm-7.98-5.813q1.417 0 2.407-.979.989-.979.989-2.396 0-1.417-.989-2.396-.99-.979-2.407-.979-1.416 0-2.396.979-.979.979-.979 2.396 0 1.417.979 2.396.98.979 2.396.979Z"></path></svg></a></td>
                   </tr>
-                  <tr>
-                     <td><input type="checkbox" name="" value=""></td>
-                     <td>1</td>
-                     <td>RCS문자</td>
-                     <td><span class="t_mms">MMS(이미지)</span></td>
-                     <td>01012345678 외 <strong>0건</strong><br><span class="t_gray">/ 01012345678</span></td>
-                     <td>2021-12-31 <br><span class="t_gray">11:32:12</span></td>
-                     <td>2021-12-31 <br><span class="t_gray">11:32:12</span></td>
-                     <td class="t_left"></td>
-                     <td><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"><path d="m15.812 7.312-3-3.02.959-.938q.396-.396.948-.396.552 0 .948.396l1.104 1.104q.375.396.375.969t-.396.948Zm-.916.917-8.854 8.854h-3v-3l8.854-8.854Z"/></svg></a></td>
-                     <td><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"><path d="m15.938 17.188-5.021-5.021q-.625.437-1.365.698-.74.26-1.594.26-2.125 0-3.614-1.5-1.49-1.5-1.49-3.625t1.49-3.625q1.489-1.5 3.614-1.5t3.625 1.5q1.5 1.5 1.5 3.625 0 .854-.25 1.594-.25.739-.687 1.344l5 5.02Zm-7.98-5.813q1.417 0 2.407-.979.989-.979.989-2.396 0-1.417-.989-2.396-.99-.979-2.407-.979-1.416 0-2.396.979-.979.979-.979 2.396 0 1.417.979 2.396.98.979 2.396.979Z"></path></svg></a></td>
-                  </tr> -->
                </tbody>
             </table>
             <div class="page">

@@ -4,6 +4,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="../favicon.ico">
    <link rel="stylesheet" href="../css/reset.css">
    <link rel="stylesheet" href="../css/common.css">
    <link rel="stylesheet" href="../css/SUIT.css">
@@ -13,107 +14,58 @@
 <script src="../javascript/console.js"></script>
 <body>
    <!-- 브랜드 연동 레이어 -->
-   <div class="brandbf_layer layer">
+   <div class="brand_layer layer">
       <h1>브랜드 연동</h1>
-      <ul class="brandbf_box">
-         <h1>
-            RCS 브랜드를 문자프로와 연동합니다.<br>
-            브랜드 연동을 위해 <b>사업자인증이 필요</b>합니다.
-         </h1>
+      <ul class="brand_box">
+         <div class="brand_box_top">
+            <h1>
+               RCS 브랜드를 문자프로와 연동합니다. 브랜드 연동을 위해 <b>사업자인증이 필요</b>합니다.
+            </h1>
+            <ul class="input_name_box">
+               <li>
+                  <input type="text" id="brand_id" name="brand_id" placeholder="브랜드 ID를 입력해 주세요.">
+               </li>
+               <li>
+                  <input type="text" id="brand_key" name="brand_key" placeholder="브랜드 Key를 입력해 주세요.">
+               </li>
+            </ul>
+         </div>
          <i>
             <p>
-               사업자 인증<br>
-               <b>사업자 인증을 위해 제출서류를 첨부 또는 팩스나 이메일로 보내주세요.</b><br><br>
-               <b>팩스번호 062) 350-0704</b><br>
-               <b>이메일 help@smspro.co.kr</b>
+               사업자 인증<br><br>
+               <b>사업자 인증을 위해 제출서류를 팩스나 이메일로 보내주세요.</b><br>
+               <b class="mt10 t_blue">팩스번호 062)350-0704 &nbsp;&nbsp;/&nbsp;&nbsp; 이메일 help@smspro.co.kr</b>
             </p>
-            <span>
-               <div class="file_upload">
-                  <input class="upload_name none" value="첨부파일" readonly>
-                  <input type="file" id="file01" class="file_input">
-                  <label for="file01">
-                     <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M11 19h2v-4.175l1.6 1.6L16 15l-4-4-4 4 1.425 1.4L11 14.825Zm-5 3q-.825 0-1.412-.587Q4 20.825 4 20V4q0-.825.588-1.413Q5.175 2 6 2h8l6 6v12q0 .825-.587 1.413Q18.825 22 18 22Zm7-13h5l-5-5Z"/></svg>
-                     <span><h1>사업자 등록증</h1><b>파일 찾아보기</b></span>
-                  </label>
-               </div>
-               <div class="file_upload">
-                  <input class="upload_name none" value="첨부파일" readonly>
-                  <input type="file"  id="file02" class="file_input">
-                  <label for="file02">
-                     <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M11 19h2v-4.175l1.6 1.6L16 15l-4-4-4 4 1.425 1.4L11 14.825Zm-5 3q-.825 0-1.412-.587Q4 20.825 4 20V4q0-.825.588-1.413Q5.175 2 6 2h8l6 6v12q0 .825-.587 1.413Q18.825 22 18 22Zm7-13h5l-5-5Z"/></svg>
-                     <span><h1>통신가입 증명원</h1><b>파일 찾아보기</b></span>
-                  </label>
-               </div>
-            </span>
          </i>
          <i>
             <p>
-               사업자와 증빙서류의 사업자가 상이한 경우<br>
+               사업자와 증빙서류의 사업자가 상이한 경우<br><br>
                <b>1. RCS 발신번호 위탁서</b><br>
                <b>2. 발신번호 별 통신서비스 가입증명원</b><br>
                <b>3. 위임인 서류</b><br>
-               <b>위 제출서류를 첨부 또는 팩스나 이메일로 보내주세요.</b>
             </p>
-            <span>
-               <div class="file_upload">
-                  <input class="upload_name none" value="첨부파일" readonly>
-                  <input type="file" id="file03" class="file_input">
-                  <label for="file03">
-                     <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M11 19h2v-4.175l1.6 1.6L16 15l-4-4-4 4 1.425 1.4L11 14.825Zm-5 3q-.825 0-1.412-.587Q4 20.825 4 20V4q0-.825.588-1.413Q5.175 2 6 2h8l6 6v12q0 .825-.587 1.413Q18.825 22 18 22Zm7-13h5l-5-5Z"/></svg>
-                     <span><h1>RCS 발신번호 위탁서</h1><b>파일 찾아보기</b></span>
-                  </label>
-               </div>
-               <div class="file_upload">
-                  <input class="upload_name none" value="첨부파일" readonly>
-                  <input type="file" id="file04" class="file_input">
-                  <label for="file04">
-                     <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M11 19h2v-4.175l1.6 1.6L16 15l-4-4-4 4 1.425 1.4L11 14.825Zm-5 3q-.825 0-1.412-.587Q4 20.825 4 20V4q0-.825.588-1.413Q5.175 2 6 2h8l6 6v12q0 .825-.587 1.413Q18.825 22 18 22Zm7-13h5l-5-5Z"/></svg>
-                     <span><h1>발신번호 별 통신가입 증명원</h1><b>파일 찾아보기</b></span>
-                  </label>
-               </div>
-            </span>
          </i>
          <i style="border:none; padding:0;">
-            <p>* 위임인 서류<br><b>우측 개인/법인에 해당하는 서류를 팩스나 이메일로 보내주세요.</b></p>
-            <span>
-               <b>- 법인의 경우: 법인인감증명서, 사업자등록증(명)</b>
+            <p>* 위임인 서류<br>
+               <b class="mt10">- 법인의 경우: 법인인감증명서, 사업자등록증(명)</b><br>
                <b>- 개인의 경우: 개인인감증명서, 신분증 사본(*개인정보 마스킹 처리 필수)</b>
-            </span>
+            </p>
          </i>
          <i>
             <p>
                [발급서류 유효기간]<br>
-               <b>- 최근 1개월 이내 발급 서류 : 통신서비스 가입증명원</b><br>
+               <b class="mt10">- 최근 1개월 이내 발급 서류 : 통신서비스 가입증명원</b><br>
                <b>- 최근 6개월 이내 발급 서류 : 법인인감증명서, 개인인감증명서, 사업자등록증(명)</b><br>
                <b>* 신분증 마스킹 처리: 이름, 생년월일, 성별, 증명사진, 발급기관(기관명, 기관 날인) 정보를 제외한 개인정보는 마스킹 처리하신 후 첨부해 주세요.</b><br>
             </p>
          </i>
       </ul>
       <div class="layer_bottom ct">
+         <a href="">신청</a>
          <a href="" class="bl3 layer_cancel">취소</a>
       </div>
    </div>
-
-   <div class="brand_layer layer">
-      <h1>브랜드 연동</h1>
-      <ul class="input_name_box">
-         <h1>
-            &nbsp;RCS 브랜드를 문자프로와 연동합니다.<br>
-            &nbsp;기존에 생성된 브랜드에 문자프로가 <b>대행사로 지정</b>되어 있어야 합니다.<br>
-         </h1>
-         <li>
-            <input type="text" id="brand_id" name="brand_id" placeholder="브랜드 ID를 입력해 주세요.">
-         </li>
-         <li>
-            <input type="text" id="brand_key" name="brand_key" placeholder="브랜드 Key를 입력해 주세요.">
-         </li>
-      </ul>
-      <div class="layer_bottom ct">
-         <a href="">저장</a>
-         <a href="" class="layer_cancel">닫기</a>
-      </div>
-   </div>
-   <!-- 브랜드 연동 레이어 -->
+   <!-- 브랜드 연동 레이어 끝 -->
 
    <?php include 'admin_header.php'; ?>
    <?php include 'side_bar.php'; ?>
@@ -124,7 +76,6 @@
                <li><a href="profile.php">회원기본 정보</a></li>
                <li><a href="callback_manage.php">발신번호 관리</a></li>
                <li class="this"><a href="brand.php">브랜드 관리</a></li>
-               <li><a href="stat_manage.php">통계내역</a></li>
                <li><a href="security.php">보안설정</a></li>
             </ul>
          </div>

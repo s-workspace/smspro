@@ -4,6 +4,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="../favicon.ico">
    <link rel="stylesheet" href="../css/reset.css">
    <link rel="stylesheet" href="../css/common.css">
    <link rel="stylesheet" href="../css/SUIT.css">
@@ -13,7 +14,7 @@
 <body style="min-width:660px; max-width:660px;">
    <div class="popup_wrap">
       <div class="popup_title">
-         <h1>전송내역 상세보기</h1>
+         <h1>전송내역 상세보기(RCS문자)</h1>
       </div>
       <div class="popup_content">
          <div class="detail_top">
@@ -22,7 +23,8 @@
                   <ul>
                      <li><span><strong>회신번호</strong></span><span class="t_red"><strong>01012345678</strong></span></li>
                      <li><span><strong>전송일시</strong></span>2021-06-09 11:22:00</li>
-                     <li><span><strong>전송결과</strong></span><strong class="t_blue">SMS 1건</strong> (성공 1건, 실패 0건, 대기 0건)</li>
+                     <li><span><strong>전송결과</strong></span><strong class="t_blue">RCS(SMS) 1건</strong> (성공 1건, 실패 0건, 대기 0건)</li>
+                     <li><span><strong>실패보상</strong></span><strong class="t_blue">150 P</strong></li>
                   </ul>
                </div>
                <div class="detail_notice">
@@ -72,10 +74,10 @@
          </div>
          <div class="detail_table">
             <table cellpadding="0" cellspacing="0" border="0">
-            <colgroup>
-                  <col width="60">
+               <colgroup>
+                  <col width="50">
                   <col width="100">
-                  <col width="70">
+                  <col width="140">
                   <col width="">
                   <col width="">
                   <col width="60">
@@ -94,7 +96,7 @@
                   <tr>
                      <td>1</td>
                      <td>01012345678</td>
-                     <td>홍길동</td>
+                     <td>이노포스트</td>
                      <td>2021-06-09 11:37:15</td>
                      <td>2021-06-09 11:37:15</td>
                      <td><span class="state" id="state_01">성공</span></td>
@@ -102,7 +104,7 @@
                   <tr>
                      <td>1</td>
                      <td>01012345678</td>
-                     <td>홍길동</td>
+                     <td>이노포스트 기업문자</td>
                      <td>2021-06-09 11:37:15</td>
                      <td>2021-06-09 11:37:15</td>
                      <td><span class="state" id="state_02">실패</span></td>

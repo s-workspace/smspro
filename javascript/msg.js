@@ -365,12 +365,32 @@ $(function(){
   // });
   // 전송 시간 선택 끝
 
-  // 회신번호 선택
-  $("#all_num_btn").on("click",function(){
-    $('.reply_num_con#all_num').toggleClass("on");
-    $(this).toggleClass("on");
+  // 발신번호 선택
+  $('#num_serach').on({
+    'focus' : function() {
+      $('.num_serach_list').show();
+    },
+    'blur' : function() {
+      $('.num_serach_list').hide();
+    }
   });
-  $("#all_num li.on").on("click",function(){
+
+  $('.num_plus').click(function(){
+    $(this).toggleClass("on");
+    $(this).siblings().removeClass('on');
+  });
+  
+  $("#all_num_btn").click(function(){
+    $('.reply_num_con#often_num').removeClass('on');
+    $('.reply_num_con#all_num').toggleClass("on");
+  });
+  
+  $("#often_num_btn").click(function(){
+    $('.reply_num_con#all_num').removeClass('on');
+    $('.reply_num_con#often_num').toggleClass("on");
+  });
+
+  $(".num_list li.on").click(function(){
     $(this).siblings().removeClass("this");
     $(this).addClass("this");
   });

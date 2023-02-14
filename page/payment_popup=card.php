@@ -4,6 +4,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="../favicon.ico">
    <link rel="stylesheet" href="../css/reset.css">
    <link rel="stylesheet" href="../css/common.css">
    <link rel="stylesheet" href="../css/SUIT.css">
@@ -39,10 +40,10 @@
                      </tr>
                   </tbody>
                </table>
-               <p>※ 결제신청요금은 VAT 포함금액입니다.</p>
+               <p>※ 결제신청요금은 SMS기준 VAT 포함금액입니다.</p>
                <div class="pay_info_box">
                   <strong>콘텐츠 결제는 서비스 개시이후 환불이 불가합니다.</strong>
-                  <span>※ 결제를 진행하시려면 아래 <b>지불요청</b> 버튼을 눌러주십시오.</span>
+                  <span>※ 결제를 진행하시려면 아래 <b class="t_blue">지불요청</b> 버튼을 눌러주십시오.</span>
                   <span>- 신용카드 결제의 경우 세금계산서는 발행되지 않습니다.</span>
                   <span>- 영수증은 완료페이지에서 인쇄하실 수 있습니다.</span>
                </div>
