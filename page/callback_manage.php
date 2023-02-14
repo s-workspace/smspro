@@ -93,7 +93,7 @@
                         <a href=""><img src="../images/common/icon_bottom.png" alt=""></a>
                      </span>
                   </li>
-                  <li>
+                  <!-- <li>
                      <span><input type="radio"></span>
                      <span>01012345678</span>
                      <span>
@@ -105,6 +105,12 @@
                         <a href=""><img src="../images/common/icon_top.png" alt=""></a>
                         <a href=""><img src="../images/common/icon_bottom.png" alt=""></a>
                      </span>
+                  </li> -->
+                  <li>
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                     <span></span>
                   </li>
                   <li>
                      <span></span>
@@ -174,11 +180,17 @@
                      <span><b class="t_red">인증완료</b></span>
                      <span>[자주사용번호]</span>
                   </li>
-                  <li>
+                  <!-- <li>
                      <span><input type="radio"></span>
                      <span>01012345678</span>
                      <span><b class="t_red">인증완료</b></span>
                      <span>[자주사용번호]</span>
+                  </li> -->
+                  <li>
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                     <span></span>
                   </li>
                   <li>
                      <span></span>

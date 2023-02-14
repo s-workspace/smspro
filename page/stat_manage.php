@@ -86,6 +86,11 @@
                </thead>
                <tbody>
                   <tr>
+                     <td colspan="5" style="height: 300px;">등록된 내용이 없습니다.</td>
+                  </tr>
+               </tbody>
+               <!-- <tbody>
+                  <tr>
                      <td>2022년 1월 1일</td>
                      <td><span>418,342 P</span></td>
                      <td><span>411,892 P</span></td>
@@ -302,8 +307,8 @@
                      <td><span>0 P</span></td>
                      <td><span>1,000,000 P</span></td>
                   </tr>
-               </tbody>
-               <thead class="thead_bottom">
+               </tbody> -->
+               <!-- <thead class="thead_bottom">
                   <tr>
                      <th>합계</th>
                      <th><span>4,869,945 P</span></th>
@@ -311,7 +316,7 @@
                      <th><span>96,811 P</span></th>
                      <th><span></span></th>
                   </tr>
-               </thead>
+               </thead> -->
             </table>
          </div>
       </div>

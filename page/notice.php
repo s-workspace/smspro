@@ -35,7 +35,8 @@
          </div>
          <div class="nt_wrap">
             <ul>
-               <li><span><b>필독</b></span><i><a href="notice=view.php"><strong>회신번호 사전등록제 적용 안내</strong></a></i><strong>2022-11-01</strong><h1>431</h1></li>
+               <li class="list_none">등록된 내용이 없습니다.</li>
+               <!-- <li><span><b>필독</b></span><i><a href="notice=view.php"><strong>회신번호 사전등록제 적용 안내</strong></a></i><strong>2022-11-01</strong><h1>431</h1></li>
                <li><span><b>필독</b></span><i><a href=""><strong>광고메시지 표기의무 강화 안내</strong></a></i><strong>2022-11-01</strong><h1>241</h1></li>
                <li><span>10</span><i><a href="">2022년 10월분 세금계산서 발행마감 안내(~11/10)</a></i><strong>2022-11-01</strong><h1>1</h1></li>
                <li><span>9</span><i><a href="">2022년 10월분 세금계산서 발행마감 안내(~11/10)</a></i><strong>2022-11-01</strong><h1>1</h1></li>
@@ -46,7 +47,7 @@
                <li><span>4</span><i><a href="">2022년 10월분 세금계산서 발행마감 안내(~11/10)</a></i><strong>2022-11-01</strong><h1>1</h1></li>
                <li><span>3</span><i><a href="">2022년 10월분 세금계산서 발행마감 안내(~11/10)</a></i><strong>2022-11-01</strong><h1>14</h1></li>
                <li><span>2</span><i><a href="">2022년 10월분 세금계산서 발행마감 안내(~11/10)</a></i><strong>2022-11-01</strong><h1>12</h1></li>
-               <li><span>1</span><i><a href="">2022년 10월분 세금계산서 발행마감 안내(~11/10)</a></i><strong>2022-11-01</strong><h1>31</h1></li>
+               <li><span>1</span><i><a href="">2022년 10월분 세금계산서 발행마감 안내(~11/10)</a></i><strong>2022-11-01</strong><h1>31</h1></li> -->
             </ul>
          </div>
          <div class="page">
@@ -54,8 +55,6 @@
                <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"><path d="M9.312 14.604 4.688 10l4.624-4.604.709.708L6.125 10l3.896 3.896Zm5.271 0L9.979 10l4.604-4.604.729.708L11.396 10l3.916 3.896Z"></path></svg></a></li>
                <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"><path d="M11.979 14.604 7.375 10l4.604-4.604.709.708L8.812 10l3.876 3.896Z"></path></svg></a></li>
                <li class="this"><a href=""><span>1</span></a></li>
-               <li><a href=""><span>2</span></a></li>
-               <li><a href=""><span>3</span></a></li>
                <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"><path d="m8.021 14.604-.709-.708L11.188 10 7.312 6.104l.709-.708L12.625 10Z"></path></svg></a></li>
                <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"><path d="m5.417 14.604-.729-.708L8.604 10 4.688 6.104l.729-.708L10.021 10Zm5.271 0-.709-.708L13.875 10 9.979 6.104l.709-.708L15.312 10Z"></path></svg></a></li>
             </ul>

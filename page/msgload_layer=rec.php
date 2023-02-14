@@ -69,13 +69,13 @@
                   <td colspan="8" style="height:305px;">전송내역이 없습니다.</td>
                </tr> -->
                <tr>
-                  <td>5</td>
+                  <td>1</td>
                   <td><span class="t_sms">SMS(단문)</span></td>
-                  <td>2021-12-31 <br><span class="t_gray">11:32:12</span></td>
-                  <td class="t_left">12312312312312123123123123123123123123123123231231231231231231231231231231231</td>
+                  <td>2021-2-29 <br><span class="t_gray">11:32:12</span></td>
+                  <td class="t_left">(광고)짧아서아쉬운2월!따뜻하고희망찬일만가득하시고웃을일만가득한행복한한달되시길바래요</td>
                   <td>01012345678</td>
                </tr>
-               <tr>
+               <!-- <tr>
                   <td>4</td>
                   <td><span class="t_sms">SMS(단문)</span></td>
                   <td>2021-12-31 <br><span class="t_gray">11:32:12</span></td>
@@ -102,7 +102,7 @@
                   <td>2021-12-31 <br><span class="t_gray">11:32:12</span></td>
                   <td class="t_left"></td>
                   <td>01012345678</td>
-               </tr>
+               </tr> -->
             </tbody>
          </table>
       </div>

@@ -90,6 +90,11 @@
                </thead>
                <tbody>
                   <tr>
+                     <td colspan="10" style="height: 300px;">등록된 내용이 없습니다.</td>
+                  </tr>
+               </tbody>
+               <!-- <tbody>
+                  <tr>
                      <td>2022년 1월 1일</td>
                      <td>132</td> 
                      <td>13,026</td> 
@@ -449,15 +454,15 @@
                      <td>110</td> 
                      <td>0</td>
                   </tr>
-               </tbody>
-               <thead class="thead_bottom">
+               </tbody> -->
+               <!-- <thead class="thead_bottom">
                   <tr>
                      <th>합계</th>
                      <th colspan="3">227,205 건</th>
                      <th colspan="3">222,849 건</th>
                      <th colspan="3">4,356 건</th>
                   </tr>
-               </thead>
+               </thead> -->
             </table>
          </div>
       </div>

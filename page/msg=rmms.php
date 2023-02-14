@@ -13,8 +13,19 @@
 <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
 <script src="../javascript/console.js"></script>
 <script src="../javascript/msg.js"></script>
-<script src="../javascript/byte_t1.js"></script>
+<script src="../javascript/text_t2.js"></script>
 <body>
+   <div class="modal none">
+      <div class="modal_con">
+         <div class="modal_img">
+
+         </div>
+         <div class="modal_bottom">
+            <a href="">자세히보기</a>
+            <a href="">닫기</a>
+         </div>
+      </div>
+   </div>
    <!-- 변수 등록 가이드 -->
    <div class="VarGuide_layer layer">
       <h1>변수 등록 가이드</h1>
@@ -83,7 +94,6 @@
    </div>
    <!-- 전송레이어 끝 -->
 
-   <?php include 'modal.php'; ?>
    <?php include 'sh_layer.php'; ?>
    <?php include 'variable_layer.php'; ?>
    <?php include 'msgload_layer=rec.php'; ?>
@@ -97,13 +107,13 @@
       <div class="wrap">
          <div class="title_top">
             <ul>
-               <li class="this"><a href="msg.php">단문 전송</a></li>
+               <li><a href="msg.php">단문 전송</a></li>
                <li><a href="msg=lms.php">장문 전송</a></li>
                <li><a href="msg=mms.php">이미지 전송</a></li>
                <li>|</li>
                <li><a href="msg=template.php">템플릿 전송</a></li>
                <li><a href="msg=rlms.php">장문(RCS) 전송</a></li>
-               <li><a href="msg=rmms.php">이미지(RCS) 전송</a></li>
+               <li class="this"><a href="msg=rmms.php">이미지(RCS) 전송</a></li>
                <span class="unit_btn">전송단가 확인</span>
                <div class="unit_box">
                   <span><h1>단문(SMS)</h1>15P</span>
@@ -123,7 +133,9 @@
                   </div>
                   <div class="reply_num_con" id="often_num">
                      <h1>발신번호(보내는사람)</h1>
-                     <input type="text" id="num_serach" placeholder="발신번호 검색 또는 입력">
+                     <ul>
+                        <li class="on this"><span>01012345678</span></li>
+                     </ul>
                      <h1 id="all_num_btn">발신번호 전체 보기</h1>
                   </div>
                   <div class="reply_num_con" id="all_num">
@@ -146,18 +158,42 @@
                      <h1><img src="../images/msg/write_icon.png" alt="">메시지 작성</h1>
                   </div>
                   <div class="msg_wbox">
+                     <div class="rcs_box">
+                        <div class="rcs_box_con">
+                           <i>
+                              <p>브랜드 선택</p>
+                              <div class="select_box brand_sel">
+                                 <span>브랜드 선택<span>
+                                 <ul>
+                                    <li><a href="brand.php">브랜드 연동</a></li>
+                                    <li class="target">브랜드1</li>
+                                    <li class="target">브랜드2</li>
+                                 </ul>
+                              </div>
+                           </i>
+                           <i>
+                              <p>템플릿 선택</p>
+                              <div class="select_box template_sel">
+                                 <span>선택안함(직접입력)</span>
+                                 <ul>
+                                    <li>선택안함(직접입력)</li>
+                                 </ul>
+                              </div>
+                           </i>
+                        </div>
+                     </div>
                      <div class="msg_table">
                         <i>
                            <div class="msg_tit">
-                              <input type="text" placeholder="제목 입력(20자 이내 / SMS인 경우 제목 전송불가)" maxlength="20" readonly>
+                              <input id="msg_tit_input" type="text" placeholder="제목 입력(20자 이내)" maxlength="20">
                            </div>
-                           <div class="msg_text sms">
+                           <div class="msg_text mms">
                               <h1 class="type01 none">(광고)</h1>
                               <textarea name="" id="text_box" placeholder="내용 입력
-(90Byte 이상 작성할 수 없습니다.)"></textarea>
+(1,300자 이상 작성할 수 없습니다.)"></textarea>
                               <h2 class="type01 none">무료수신거부 0808718744</h2>
                               <div class="t_byte">
-                                 <b>0</b><span>/90Byte</span><h1 class="msg_t1">SMS 단문</h1>
+                                 <b>0</b><span>/1,300자</span><h1 class="msg_t3">RCS 이미지</h1>
                               </div>
                            </div>
                         </i>
@@ -179,7 +215,7 @@
                            <li><a href="080_service.php" target="_blank">080 수신거부 서비스 신청</a></li>
                            </ul>
                         </div>
-                        <div class="check_con mt10" id="msgSet02_wrap">
+                        <div class="check_con mt10" id="msgSet01_wrap">
                            <input type="checkbox" name="" value="" id="msgSet01">
                            <label for="msgSet01"><span>광고메시지 전송</span></label>
                            <p>- <b>(광고) + 080번호</b> 자동 삽입</p>
@@ -189,6 +225,176 @@
                            <label for="msgSet02"><span>내 문자함에 자동 저장</span></label>
                            <p>- 메시지 관리 → <b>[나의 메시지]</b> 저장</p>
                         </div>
+                        <div class="check_con mt20">
+                           <input type="checkbox" name="" value="" id="msgSet03">
+                           <label for="msgSet03"><span>실패시 대체문자 전송</span></label>
+                           <p>- <b>RCS 전송 실패시</b>일반문자로 대체 전송</p>
+                        </div>
+                     </div>
+                     <div class="img_upload">
+                        <h1><img src="../images/common/addbox_icon.png" alt="">이미지 업로드</h1>
+                        <ul>
+                           <li>
+                              <dl>
+                                 <dd><p></p></dd>
+                                 <dd><p></p></dd>
+                                 <dd><p></p></dd>
+                              </dl>
+                           </li>
+                           <li><span>※ 이미지는 최대 3장, jpg/jpeg 파일만 첨부 가능</span></li>
+                           <li><span>※ 미리보기 화면에 업로드된 이미지 클릭시 삭제</span></li>
+                        </ul>
+                     </div>
+                     <div class="btn_upload">
+                        <h1><img src="../images/common/addbox_icon.png" alt="">버튼 추가</h1>
+                        <ul>
+                           <li class="this">미사용</li>
+                           <li class="btn-01">1개</li>
+                           <li class="btn-02">2개</li>
+                           <li class="btn-03">3개</li>
+                        </ul>
+                        <div class="add_btn btn-01 none">
+                           <h1>- 버튼 01</h1>
+                           <div class="btn_input">
+                              <i>
+                                 <p>버튼명</p>
+                                 <input type="text" class="btnName" placeholder="이름을 입력해 주세요." maxlength="16">
+                              </i>
+                              <i>
+                                 <p>버튼타입</p>
+                                 <div class="select_box">
+                                    <span>URL 연결</span>
+                                    <ul>
+                                       <li class="url_sel">URL 연결</li>
+                                       <li class="num_sel">전화연결</li>
+                                    </ul>
+                                 </div>
+                              </i>
+                           </div>
+                           <div class="btn_input sub_input i_url">
+                              <i>
+                                 <p>URL 주소</p>
+                                 <input type="text" placeholder="https://를 포함한 URL을 입력해 주세요.">
+                              </i>
+                           </div>
+                           <div class="btn_input sub_input i_num none">
+                              <i>
+                                 <p>전화연결</p>
+                                 <input type="text" placeholder="전화번호를 입력해 주세요.">
+                              </i>
+                           </div>
+                        </div>
+                        <div class="add_btn btn-02 none">
+                           <h1>- 버튼 02</h1>
+                           <div class="btn_input">
+                              <i>
+                                 <p>버튼명</p>
+                                 <input type="text" class="btnName" placeholder="이름을 입력해 주세요." maxlength="16">
+                              </i>
+                              <i>
+                                 <p>버튼타입</p>
+                                 <div class="select_box">
+                                    <span>URL 연결</span>
+                                    <ul>
+                                       <li class="url_sel">URL 연결</li>
+                                       <li class="num_sel">전화연결</li>
+                                    </ul>
+                                 </div>
+                              </i>
+                           </div>
+                           <div class="btn_input sub_input i_url">
+                              <i>
+                                 <p>URL 주소</p>
+                                 <input type="text" placeholder="https://를 포함한 URL을 입력해 주세요.">
+                              </i>
+                           </div>
+                           <div class="btn_input sub_input i_num none">
+                              <i>
+                                 <p>전화연결</p>
+                                 <input type="text" placeholder="전화번호를 입력해 주세요.">
+                              </i>
+                           </div>
+                        </div>
+                        <div class="add_btn btn-03 none">
+                           <h1>- 버튼 03</h1>
+                           <div class="btn_input">
+                              <i>
+                                 <p>버튼명</p>
+                                 <input type="text" class="btnName" placeholder="이름을 입력해 주세요." maxlength="16">
+                              </i>
+                              <i>
+                                 <p>버튼타입</p>
+                                 <div class="select_box">
+                                    <span>URL 연결</span>
+                                    <ul>
+                                       <li class="url_sel">URL 연결</li>
+                                       <li class="num_sel">전화연결</li>
+                                    </ul>
+                                 </div>
+                              </i>
+                           </div>
+                           <div class="btn_input sub_input i_url">
+                              <i>
+                                 <p>URL 주소</p>
+                                 <input type="text" placeholder="https://를 포함한 URL을 입력해 주세요.">
+                              </i>
+                           </div>
+                           <div class="btn_input sub_input i_num none">
+                              <i>
+                                 <p>전화연결</p>
+                                 <input type="text" placeholder="전화번호를 입력해 주세요.">
+                              </i>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="msg_content return_write">
+                  <div class="title">
+                     <h1><img src="../images/msg/write_icon.png" alt="">대체문자 작성</h1>
+                  </div>
+                  <div class="msg_wbox">
+                     <div class="msg_table">
+                        <i>
+                           <div class="msg_tit">
+                              <input type="text" placeholder="제목 입력(20자 이내 / SMS인 경우 제목 전송불가)" maxlength="20">
+                           </div>
+                           <div class="msg_text sms">
+                              <h1 class="type01 none">(광고)</h1>
+                              <textarea name="" id="text_box2" placeholder="내용 입력
+- 90Byte 초과시 LMS로 자동 전환
+- LMS 전환시 최대 2000Byte 까지 입력 가능
+- 이미지 업로드시 MMS로 자동 전환"></textarea>
+                              <h2 class="type01 none">무료수신거부 0808718744</h2>
+                              <div class="t_byte">
+                                 <b>0</b><span>/90Byte</span><h1 class="msg_t1">SMS 단문</h1><h1 class="msg_t2">LMS 장문</h1><h1 class="msg_t3">MMS 이미지</h1>
+                              </div>
+                           </div>
+                        </i>
+                        <div class="btn_box">
+                           <ul>
+                              <li><a href="" class="myMsg">메시지 불러오기</a></li>
+                              <li><a href="" class="recMsg">전송내역 불러오기</a></li>
+                              <li><a href="">내용저장</a></li>
+                              <li><a href="" id="return_btn2">다시쓰기</a></li>
+                              <li><a href="" class="action_btn sh_btn2">특수문자</a></li>
+                              <li><a href="" class="action_btn variable_btn2">#{변수}</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="img_upload">
+                        <h1><img src="../images/common/addbox_icon.png" alt="">이미지 업로드</h1>
+                        <ul>
+                           <li>
+                              <dl>
+                                 <dd><p></p></dd>
+                                 <dd><p></p></dd>
+                                 <dd><p></p></dd>
+                              </dl>
+                           </li>
+                           <li><span>※ 이미지는 최대 3장, jpg/jpeg 파일만 첨부 가능</span></li>
+                           <li><span>※ 미리보기 화면에 업로드된 이미지 클릭시 삭제</span></li>
+                        </ul>
                      </div>
                   </div>
                </div>
@@ -259,6 +465,11 @@
                            <h1 class="ads01 refusal_none">(광고)</h1>
                            <span>내용 미리보기</span>
                            <h2 class="ads01 refusal_none">무료수신거부 0808718744</h2>
+                           <div class="btn_view">
+                              <button class="btn-01">버튼명</button>
+                              <button class="btn-02">버튼명</button>
+                              <button class="btn-03">버튼명</button>
+                           </div>
                         </div>
                      </div>
                   </div>

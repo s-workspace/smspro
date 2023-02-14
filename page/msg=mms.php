@@ -13,8 +13,19 @@
 <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
 <script src="../javascript/console.js"></script>
 <script src="../javascript/msg.js"></script>
-<script src="../javascript/byte_t1.js"></script>
+<script src="../javascript/byte_t2.js"></script>
 <body>
+   <div class="modal none">
+      <div class="modal_con">
+         <div class="modal_img">
+
+         </div>
+         <div class="modal_bottom">
+            <a href="">자세히보기</a>
+            <a href="">닫기</a>
+         </div>
+      </div>
+   </div>
    <!-- 변수 등록 가이드 -->
    <div class="VarGuide_layer layer">
       <h1>변수 등록 가이드</h1>
@@ -83,7 +94,6 @@
    </div>
    <!-- 전송레이어 끝 -->
 
-   <?php include 'modal.php'; ?>
    <?php include 'sh_layer.php'; ?>
    <?php include 'variable_layer.php'; ?>
    <?php include 'msgload_layer=rec.php'; ?>
@@ -97,9 +107,9 @@
       <div class="wrap">
          <div class="title_top">
             <ul>
-               <li class="this"><a href="msg.php">단문 전송</a></li>
+               <li><a href="msg.php">단문 전송</a></li>
                <li><a href="msg=lms.php">장문 전송</a></li>
-               <li><a href="msg=mms.php">이미지 전송</a></li>
+               <li class="this"><a href="msg=mms.php">이미지 전송</a></li>
                <li>|</li>
                <li><a href="msg=template.php">템플릿 전송</a></li>
                <li><a href="msg=rlms.php">장문(RCS) 전송</a></li>
@@ -123,7 +133,9 @@
                   </div>
                   <div class="reply_num_con" id="often_num">
                      <h1>발신번호(보내는사람)</h1>
-                     <input type="text" id="num_serach" placeholder="발신번호 검색 또는 입력">
+                     <ul>
+                        <li class="on this"><span>01012345678</span></li>
+                     </ul>
                      <h1 id="all_num_btn">발신번호 전체 보기</h1>
                   </div>
                   <div class="reply_num_con" id="all_num">
@@ -149,15 +161,15 @@
                      <div class="msg_table">
                         <i>
                            <div class="msg_tit">
-                              <input type="text" placeholder="제목 입력(20자 이내 / SMS인 경우 제목 전송불가)" maxlength="20" readonly>
+                              <input id="msg_tit_input" type="text" placeholder="제목 입력(20자 이내)" maxlength="20">
                            </div>
-                           <div class="msg_text sms">
+                           <div class="msg_text mms">
                               <h1 class="type01 none">(광고)</h1>
                               <textarea name="" id="text_box" placeholder="내용 입력
-(90Byte 이상 작성할 수 없습니다.)"></textarea>
+(2,000Byte 이상 작성할 수 없습니다.)"></textarea>
                               <h2 class="type01 none">무료수신거부 0808718744</h2>
                               <div class="t_byte">
-                                 <b>0</b><span>/90Byte</span><h1 class="msg_t1">SMS 단문</h1>
+                                 <b>0</b><span>/2,000Byte</span><h1 class="msg_t3">MMS 이미지</h1>
                               </div>
                            </div>
                         </i>
@@ -176,10 +188,10 @@
                         <div class="title">
                            <h1><img src="../images/msg/msg_icon.png" alt="">메시지 유형 선택</h1>
                            <ul>
-                           <li><a href="080_service.php" target="_blank">080 수신거부 서비스 신청</a></li>
+                              <li><a href="080_service.php" target="_blank">080 수신거부 서비스 신청</a></li>
                            </ul>
                         </div>
-                        <div class="check_con mt10" id="msgSet02_wrap">
+                        <div class="check_con mt10" id="msgSet01_wrap">
                            <input type="checkbox" name="" value="" id="msgSet01">
                            <label for="msgSet01"><span>광고메시지 전송</span></label>
                            <p>- <b>(광고) + 080번호</b> 자동 삽입</p>
@@ -189,6 +201,20 @@
                            <label for="msgSet02"><span>내 문자함에 자동 저장</span></label>
                            <p>- 메시지 관리 → <b>[나의 메시지]</b> 저장</p>
                         </div>
+                     </div>
+                     <div class="img_upload">
+                        <h1><img src="../images/common/addbox_icon.png" alt="">이미지 업로드</h1>
+                        <ul>
+                           <li>
+                              <dl>
+                                 <dd><p></p></dd>
+                                 <dd><p></p></dd>
+                                 <dd><p></p></dd>
+                              </dl>
+                           </li>
+                           <li><span>※ 이미지는 최대 3장, jpg/jpeg 파일만 첨부 가능</span></li>
+                           <li><span>※ 미리보기 화면에 업로드된 이미지 클릭시 삭제</span></li>
+                        </ul>
                      </div>
                   </div>
                </div>

@@ -43,7 +43,8 @@
                   <a href="new_msg_popup=lms.php" id="new_message" class="bl3" onclick="window.open(this.href, '', 'left=640, top=250, width=440, height=460'); return false;">신규 메시지 등록</a>
                </p>
             </div>
-            <div class="msg_list msg_list_over">
+            <div class="list_none">등록된 메시지가 없습니다.</div>
+            <!-- <div class="msg_list msg_list_over">
                <div class="msg_list_con">
                   <div class="msg_list_tit">
                      <input type="checkbox">
@@ -91,7 +92,7 @@
                      </span>
                   </div>
                </div>
-            </div>
+            </div> -->
          </div>
       </div>
    </div>

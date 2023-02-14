@@ -90,7 +90,7 @@
          </i>
       </ul>
       <div class="layer_bottom ct">
-         <a href="" class="bl3 brand_add2">취소</a>
+         <a href="" class="bl3 layer_cancel">취소</a>
       </div>
    </div>
 
@@ -168,14 +168,14 @@
                </thead>
                <tbody>
                   <tr>
-                     <td colspan="4" style="height: 200px;" class="none">연동된 브랜드가 없습니다.</td>
+                     <td colspan="4" style="height: 200px;">연동된 브랜드가 없습니다.</td>
                   </tr>
-                  <tr>
+                  <!-- <tr>
                      <td>팝시스넷</td>
                      <td>BR.HTnZ130KUw</td>
                      <td>2022-12-29 14:16:28</td>
                      <td><input type="button" value="삭제" class="btn2"></td>
-                  </tr>
+                  </tr> -->
                </tbody>
             </table>
             <div class="page">

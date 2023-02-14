@@ -4,6 +4,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="../favicon.ico">
    <link rel="stylesheet" href="../css/reset.css">
    <link rel="stylesheet" href="../css/common.css">
    <link rel="stylesheet" href="../css/SUIT.css">
@@ -44,11 +45,6 @@
             </ul>
          </div>
       </div>
-      <div class="join_cer">
-         <i>
-            <a href="">본인인증</a>
-         </i>
-      </div>
       <div class="cont_box">
          <h2>약관동의</h2>
          <div class="counsel_label all_agree">
@@ -69,7 +65,7 @@
          </div>
       </div>
       <div class="join_btn">
-         <a href="join=member.php">다음</a>
+         <a href="join=corp.php">본인인증</a>
          <a href="../index.php">취소</a>
       </div>
    </div>

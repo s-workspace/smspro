@@ -19,9 +19,9 @@
          <div class="popup_content">
             <div class="payment_popup">
                <ul>
-                  <li><h1>가맹점</h1><strong>문자모아</strong> [ www.smsmoa.com ]</li>
+                  <li><h1>가맹점</h1><strong>문자프로</strong> [ www.smspro.co.kr ]</li>
                   <li><h1>회원아이디</h1><strong class="t_blue">admin</strong></li>
-                  <li><h1>성명</h1><strong class="t_blue">이노포스트</strong></li>
+                  <li><h1>성명</h1><strong class="t_blue">테스트회원</strong></li>
                </ul>
                <table>
                   <thead>
@@ -33,9 +33,9 @@
                   </thead>
                   <tbody>
                      <tr>
-                        <td><strong>250</strong> 건</td>
-                        <td><strong>20</strong> 원</td>
-                        <td><strong class="t_red">5,500</strong> 원</td>
+                        <td><strong>500,000</strong> 건</td>
+                        <td><strong>10</strong> 원</td>
+                        <td><strong class="t_red">5,500,000</strong> 원</td>
                      </tr>
                   </tbody>
                </table>
@@ -47,7 +47,7 @@
                      <h1>607-01-118215</h1>
                      <span>예금주 : (주)이노포스트</span>
                   </i>
-                  <h2>상기계좌로 결제금액 <b>5,500</b> 원을 <input type="text" value="이노포스트" readonly> 으로 입금하시고<br><strong>입금확인</strong> 버튼을 눌러주세요.</h2>
+                  <h2>상기계좌로 결제금액 <b>5,500,000</b> 원을 <input type="text" value="이노포스트" readonly> 으로 입금하시고<br><strong>입금확인</strong> 버튼을 눌러주세요.</h2>
                </div>
             </div>
          </div>

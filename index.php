@@ -4,158 +4,38 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="favicon.ico">
    <link rel="stylesheet" href="css/reset.css">
    <link rel="stylesheet" href="css/common.css">
    <link rel="stylesheet" href="css/SUIT.css">
-   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
    <title>문자프로 - 메시지 통합 플랫폼</title>
 </head>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+<script src="javascript/main.js"></script>
 <script>
    $(function (){
-      
-      // 체험하기
-      $('.inner_close span').click(function(){
-         $('.inner').slideUp();
-      });
-      // 체험하기 끝
-
-      // Scroll Top
-      $(".move_top").click(function(){
-         $('html, body').animate({ scrollTop: $("body").offset().top }, 300);
-      });
-      // Scroll Top 끝
-
-      // 배너 이벤트
-      var swiper = new Swiper(".banner", {
-        slidesPerView: 'auto',
-        parallax: true,
-        speed: 1000,
-         autoplay: {
-            delay: 6000,
-            disableOnInteraction: false,
-         },
-         navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-         },
-         pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        }
-      });
-      // 배너 이벤트 끝
-
-      // 네비 이벤트
-      var offsetTop = $('.nav').offset().top;
-      var s1Top = $('#s1').offset().top - 300;
-      var s2Top = $('#s2').offset().top - 300;
-      var s3Top = $('#s3').offset().top - 300;
-      var s4Top = $('#s4').offset().top - 300;
-
-      $(window).scroll(function(){
-         var scrollTop = 0;
-
-         scrollTop = $(window).scrollTop() - 110;
-
-         if (scrollTop > offsetTop) $(".nav").addClass('on');
-         else $(".nav").removeClass('on');
-
-         if(scrollTop > s1Top) {
-            $('.nav li').eq(1).addClass('this');
-            $('.nav li').eq(1).siblings().removeClass('this');
-         }
-         if(scrollTop > s2Top) {
-            $('.nav li').eq(2).addClass('this');
-            $('.nav li').eq(2).siblings().removeClass('this');
-         } 
-         if(scrollTop > s3Top) {
-            $('.nav li').eq(3).addClass('this');
-            $('.nav li').eq(3).siblings().removeClass('this');
-         } 
-         if(scrollTop > s4Top) {
-            $('.nav li').eq(4).addClass('this');
-            $('.nav li').eq(4).siblings().removeClass('this');
-         } 
-      });
-
-      $('.tag').click(function(e){
-         e.preventDefault();
-         $(".nav").addClass('on');
-         var offsetTop = $('.active').offset().top - 80;
-         scrollTop = $(window).scrollTop();
-         if(scrollTop > offsetTop) $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
-         else $('html,body').animate({scrollTop:$(this.hash).offset().top - 100}, 500);
-      });
-      // 네비 이벤트 끝
-
-      // 스크롤 이벤트
-      var amount = $('.active').length;
-      var obj = {};
-
-      for (var i = 0; i < amount; i++) {
-         obj['active_'+ i] = $('.active').eq(i).offset().top - 800;
-      }
-
-      $(window).on('scroll', function() {
-         var scroll = $(window).scrollTop();
-         
-         for (var i = 0; i < amount; i++) {
-            if (scroll > obj['active_' + i]) {
-               $('.active').eq(i).addClass('on');
-            }
-            else if (scroll < obj['active_' + i]) {
-               $('.active').eq(i).removeClass('on');
-            }
-         }
-      });
-
-      var d_amount = $('.d_active').length;
-      var d_obj = {};
-
-      for (var i = 0; i < d_amount; i++) {
-         d_obj['d_active_'+ i] = $('.d_active').eq(i).offset().top - 1300;
-      }
-
-      $(window).on('scroll', function() {
-         var scroll = $(window).scrollTop();
-         
-         for (var i = 0; i < d_amount; i++) {
-            if (scroll > d_obj['d_active_' + i]) {
-               $('.d_active').eq(i).addClass('on');
-            }
-            else if (scroll < d_obj['d_active_' + i]) {
-               $('.d_active').eq(i).removeClass('on');
-            }
-         }
-      });
-      // 스크롤 이벤트 끝
-
-      // RCS 미리보기
-      var swiper2 = new Swiper(".phone_wrap", {
-        speed: 1000,
-         autoplay: {
-            delay: 6000,
-            disableOnInteraction: false,
-         },
-        effect: "creative",
-        creativeEffect: {
-          prev: {
-            translate: ["-120%", 0, -500],
-          },
-          next: {
-            translate: ["120%", 0, -500],
-          },
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-      // RCS 미리보기 끝
+    var swiper = new Swiper(".msg_kind_wrap", {
+      slidesPerView: 1,
+      spaceBetween: 100,
+      speed: 1000,
+      autoplay: {
+         delay: 6000,
+         disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
    });
- </script>
+</script>
 <body>
    <div class="move_top">
       <span><img src="images/main/arrow_top.png" alt=""></span>
@@ -172,106 +52,130 @@
          <a href="page/msg.php"></a>
       </div>
    </div>
-   <div class="swiper banner">
+   <div class="visual on">
       <div class="header">
          <div class="wrap">
             <div class="logo">
-               <a href=""><img src="images/common/logo2.png" alt=""></a>
+               <a href=""></a>
             </div>
+            <ul class="nav">
+               <li><a href="#s1" class="tag">서비스 안내</a></li>
+               <li><a href="#s2" class="tag">RCS 소개</a></li>
+               <li><a href="#s3" class="tag">이용안내</a></li>
+               <li><a href="#s4" class="tag">문의하기</a></li>
+            </ul>
             <div class="menu_btn">
                <a href="page/join.php">회원가입</a>
                <a href="page/login.php">로그인</a>
             </div>
          </div>
       </div>
-      <div class="swiper-wrapper">
-         <div class="swiper-slide">
-            <div class="wrap">
-               <i>
-                  <div class="title" data-swiper-parallax="-600">빠르고 다양한 문자 서비스<br>메시지 통합 플랫폼</div>
-                  <div class="subtitle" data-swiper-parallax="-1200">#SMS #LMS #MMS #RCS</div>
-               </i>
-               <!-- <i><img src="images/main/banner01.png" alt=""></i> -->
-               <i><img src="images/main/banner_con01.png" alt=""></i>
-            </div>
-         </div>
-         <div class="swiper-slide">
-            <div class="wrap">
-               <i>
-                  <div class="title" data-swiper-parallax="-600">새로워진 기업용 문자 서비스<br>RCS 기업 메시지</div>
-                  <div class="subtitle" data-swiper-parallax="-1200">신뢰성 있는 메시지로 기업의 이미지를 향상시켜 보세요.</div>
-               </i>
-               <!-- <i><img src="images/main/banner02.png" alt=""></i> -->
-               <i><img src="images/main/banner_con02.png" alt=""></i>
-            </div>
-         </div>
-         <div class="swiper-slide">
-            <div class="wrap">
-               <i>
-                  <div class="title" data-swiper-parallax="-600">설치없이 간편하게 이용하는<br>웹기반 서비스</div>
-                  <div class="subtitle" data-swiper-parallax="-1200">메시지 전송에 불필요한 업무를 줄이세요.</div>
-               </i>
-               <!-- <i><img src="images/main/banner03.png" alt=""></i> -->
-               <i><img src="images/main/banner_con03.png" alt=""></i>
-            </div>
-         </div>
+      <div class="banner_text">
+         <h1>개인, 기업 맞춤 문자 메시지 전송</h1>
+         <h2>문자<b>프로</b></h2>
       </div>
-      <div class="swiper_button_box">
-         <div class="swiper-button-next"></div>
-         <div class="swiper-button-prev"></div>
-      </div>
-      <div class="swiper-pagination"></div>
+      <video src="images/main/bg.mp4" loop="loop" muted="muted" autoplay="autoplay"></video>
+      <span class="scroll_arrow"><img src="images/main/down_arrow.png" alt="">Scroll</span>
       <div class="nav">
          <div class="wrap">
             <ul>
                <li><a href="page/login.php"><h1>SMSPRO SERVICE</h1><h2>시작하기<span></span></h2></a></li>
-               <li><a href="#s1" class="tag"><p></p>서비스 소개</a></li>
-               <li><a href="#s2" class="tag"><p></p>RCS 기능</a></li>
-               <li><a href="#s3" class="tag"><p></p>이용안내</a></li>
-               <li><a href="#s4" class="tag"><p></p>문의하기</a></li>
+               <li><a href="#s1" class="tag"><p><img src="images/main/nav_icon01.png" alt=""></p>서비스 안내</a></li>
+               <li><a href="#s2" class="tag"><p><img src="images/main/nav_icon02.png" alt=""></p>RCS 소개</a></li>
+               <li><a href="#s3" class="tag"><p><img src="images/main/nav_icon03.png" alt=""></p>이용안내</a></li>
+               <li><a href="#s4" class="tag"><p><img src="images/main/nav_icon04.png" alt=""></p>문의하기</a></li>
             </ul>
          </div>
       </div>
    </div>
-   <div class="section" id=s1>
+   <div class="section" id="s1">
       <div class="wrap">
-         <div class="msg_kind">
-            <i>
-               <span><img src="images/main/sms.png" alt="">단문 전송</span>
-               <h1>간단한 안내 문자<br>빠르고 간편하게</h1>
-               <h2>짧은 알림이나 정보전달 저렴한 가격에 보내세요.</h2><br>
-               <h2>일반문자 | 최대 90Byte 입력</h2>
-               <h3>기업문자 | 최대 최대 100자 입력, 액션버튼 1개 추가</h3>
-            </i>
-            <img src="images/main/msg_kind01.png" alt="">
+         <div class="service_wrap">
+            <h1>다양한 문자 서비스 하나로 모아</h1>
+            <h2>메시지 통합 플랫폼 <b>문자프로</b>와 함께<br>다양한 메시지를 보내보세요.</h2>
+            <ul>
+               <li class="active">
+                  <p><img src="images/main/sv_icon01.png" alt=""></p>
+                  <h1>충전금액 사용기한 무기한</h1>
+                  <span>한번 충전된 금액은 소진할때 까지<br>평생 무기한으로 사용이 가능합니다.</span>
+               </li>
+               <li class="active">
+                  <p><img src="images/main/sv_icon02.png" alt=""></p>
+                  <h1>080 수신거부 서비스 무료제공</h1>
+                  <span>광고메시지 전송 표기의무에 따라<br>080 수신거부 서비스를 제공해 드립니다.</span>
+               </li>
+               <li class="active">
+                  <p><img src="images/main/sv_icon03.png" alt=""></p>
+                  <h1>발송실패건 자동환급</h1>
+                  <span>문자 전송 실패시 자동으로 환급되어<br>불필요한 업무를 줄여 드립니다.</span>
+               </li>
+               <li class="active">
+                  <p><img src="images/main/sv_icon04.png" alt=""></p>
+                  <h1>RCS 문자 서비스</h1>
+                  <span>기업회원 전용 RCS 문자 서비스로<br>새로워진 문자 메시지를 보내보세요.</span>
+               </li>
+               <li class="active">
+                  <p><img src="images/main/sv_icon05.png" alt=""></p>
+                  <h1>초대량 문자 전송</h1>
+                  <span>문자프로는 빠르고 정확하게<br>한번에 30만건까지 보낼 수 있습니다.</span>
+               </li>
+               <li class="active">
+                  <p><img src="images/main/sv_icon06.png" alt=""></p>
+                  <h1>관리형 콘솔</h1>
+                  <span>문자전송, 요금사용 현황을 확인하고<br>더욱 체계적으로 관리해 보세요.</span>
+               </li>
+            </ul>
          </div>
-         <div class="msg_kind active">
-            <i>
-               <span><img src="images/main/lms.png" alt="">장문 전송</span>
-               <h1>긴 내용의 광고/안내 문자<br>풍부한 메시지 전송</h1>
-               <h2>다양한 정보 전달, 대량전송 걱정없이 보내세요.</h2><br>
-               <h2>일반문자 | 최대 2,000Byte 입력</h2>
-               <h3>기업문자 | 최대 1,300자 입력, 액션버튼 3개 추가</h3>
-            </i>
-            <img src="images/main/msg_kind02.png" alt="">
-         </div>
-         <div class="msg_kind active">
-            <i>
-               <span><img src="images/main/mms.png" alt="">이미지 전송</span>
-               <h1>이미지와 함께 내용 전달<br>광고/홍보, 상품 소개</h1>
-               <h2>시각적인 메시지 전송으로 도달 효과를 높혀 보세요.</h2><br>
-               <h2>일반문자 | 이미지(300KB) 첨부 가능</h2>
-               <h3>기업문자 | 이미지(1MB) 첨부 가능, 액션버튼 3개 추가</h3>
-            </i>
-            <img src="images/main/msg_kind03.png" alt="">
+      </div>
+   </div>
+   <div class="section">
+      <div class="wrap">
+         <div class="swiper msg_kind_wrap">
+            <div class="swiper-wrapper">
+               <div class="msg_kind swiper-slide">
+                  <i>
+                     <span><img src="images/main/sms.png" alt="">단문 전송</span>
+                     <h1>짧고 간단한 안내 문자<br>빠르고 간편하게</h1>
+                     <h2>일반문자 | 최대 90Byte 입력</h2>
+                     <h3>기업문자 | 최대 100자 입력, 액션버튼 1개 추가</h3>
+                     <h4>* 액션버튼은 링크, 지도, 동영상 등 삽입이 가능합니다.</h4>
+                  </i>
+                  <img src="images/main/msg_kind01.png" alt="">
+               </div>
+               <div class="msg_kind swiper-slide">
+                  <i>
+                     <span><img src="images/main/lms.png" alt="">장문 전송</span>
+                     <h1>긴 내용의 광고/안내 문자<br>풍부한 메시지 전송</h1>
+                     <h2>일반문자 | 최대 2,000Byte 입력</h2>
+                     <h3>기업문자 | 최대 1,300자 입력, 액션버튼 3개 추가</h3>
+                     <h4>* 액션버튼은 링크, 지도, 동영상 등 삽입이 가능합니다.</h4>
+                  </i>
+                  <img src="images/main/msg_kind02.png" alt="">
+               </div>
+               <div class="msg_kind swiper-slide">
+                  <i>
+                     <span><img src="images/main/mms.png" alt="">이미지 전송</span>
+                     <h1>이미지와 함께 내용 전달<br>광고/홍보, 상품 소개</h1>
+                     <h2>일반문자 | 이미지(300KB) 첨부 가능</h2>
+                     <h3>기업문자 | 이미지(1MB) 첨부 가능, 액션버튼 3개 추가</h3>
+                     <h4>* 액션버튼은 링크, 지도, 동영상 등 삽입이 가능합니다.</h4>
+                  </i>
+                  <img src="images/main/msg_kind03.png" alt="">
+               </div>
+            </div>
+            <div class="swiper_bottom">
+               <div class="swiper-button-next"></div>
+               <div class="swiper-button-prev"></div>
+               <div class="swiper-pagination"></div>
+            </div>
          </div>
       </div>
    </div>
    <div class="section active" id="s2">
       <div class="wrap">
          <div class="sec_tit">
-            <h1>새로운 문자 서비스의 시작</h1>
             <h2>채팅<b>+</b>RCS 메시지를 만나보세요!</h2>
+            <h1>새로운 문자 서비스의 <b>시작</b></h1>
          </div>
          <div class="rcs_info">
             <div class="rcs_icon_wrap">
@@ -323,136 +227,41 @@
          </div>
       </div>
    </div>
-   <div class="section bg active">
-      <div class="wrap">
-         <div class="sec_tit">
-            <h1>문자 서비스 유형마다 다른점은?</h1>
-            <h2>일반 문자와  RCS 문자의 차이점을 비교해 보세요.</h2>
-         </div>
-         <div class="rcs_info_table">
-            <table>
-               <thead>
-                  <tr>
-                     <th class="th_t1"></th>
-                     <th><span>SMS 단문</span>일반 문자</th>
-                     <th>RCS 문자</th>
-                     <th><span>LMS 장문</span>일반 문자</th>
-                     <th>RCS 문자</th>
-                     <th><span>MMS 이미지</span>일반 문자</th>
-                     <th>RCS 문자</th>
-                  </tr>
-               </thead>
-               <tbody>
-                  <tr>
-                     <th>글자 입력</th>
-                     <th></th>
-                     <th></th>
-                     <th></th>
-                     <th></th>
-                     <th></th>
-                     <th></th>
-                  </tr>
-                  <tr>
-                     <th class="th_t2">최대 글자수</th>
-                     <td>최대 90Byte</td>
-                     <td>최대 100자</td>
-                     <td>최대 2,000Byte</td>
-                     <td>최대 1,300자</td>
-                     <td>최대 2,000Byte</td>
-                     <td>최대 1,300자</td>
-                  </tr>
-                  <tr>
-                     <th>기능</th>
-                     <th></th>
-                     <th></th>
-                     <th></th>
-                     <th></th>
-                     <th></th>
-                     <th></th>
-                  </tr>
-                  <tr>
-                     <th class="th_t2">제목</th>
-                     <td>X</td>
-                     <td>O</td>
-                     <td>O</td>
-                     <td>O</td>
-                     <td>O</td>
-                     <td>O</td>
-                  </tr>
-                  <tr>
-                     <th class="th_t2">액션버튼</th>
-                     <td>X</td>
-                     <td>O</td>
-                     <td>X</td>
-                     <td>O</td>
-                     <td>X</td>
-                     <td>O</td>
-                  </tr>
-                  <tr>
-                     <th class="th_t2">스타일</th>
-                     <td>X</td>
-                     <td>O</td>
-                     <td>X</td>
-                     <td>O</td>
-                     <td>X</td>
-                     <td>O</td>
-                  </tr>
-                  <tr>
-                     <th class="th_t2">이미지</th>
-                     <td>X</td>
-                     <td>X</td>
-                     <td>X</td>
-                     <td>X</td>
-                     <td>300 KB</td>
-                     <td>1 MB</td>
-                  </tr>
-                  <tr>
-                     <th>요금</th>
-                     <th></th>
-                     <th></th>
-                     <th></th>
-                     <th></th>
-                     <th></th>
-                     <th></th>
-                  </tr>
-                  <tr>
-                     <th class="th_t2">최저 단가</th>
-                     <td>1O 원</td>
-                     <td>10 원</td>
-                     <td>30 원</td>
-                     <td>30 원</td>
-                     <td>80 원</td>
-                     <td>80 원</td>
-                  </tr>
-               </tbody>
-            </table>
-            <i>
-               <a href="page/guide07.php" target="blank">RCS 서비스 이용 안내<svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"><path d="M4.5 17q-.625 0-1.062-.438Q3 16.125 3 15.5v-11q0-.625.438-1.062Q3.875 3 4.5 3H10v1.5H4.5v11h11V10H17v5.5q0 .625-.438 1.062Q16.125 17 15.5 17Zm3.562-4L7 11.938 14.438 4.5H12V3h5v5h-1.5V5.562Z"></path></svg></a>
-            </i>
-         </div>
-      </div>
-   </div>
    <div class="section bn" id="s3">
       <div class="wrap">
          <div class="sec_tit">
-            <h1>문자 서비스 이용이 처음이세요?</h1>
-            <h2><a href="page/guide.php" target="_blank">이용가이드 전체보기<img src="images/main/arrow_icon02.png" alt=""></a></h2>
+            <h1>문자 메시지 전송 가이드</h1>
          </div>
          <div class="service_info">
             <ul>
+               <li class="active"><a href="page/guide07.php" target="_blank">
+                  <h1>RCS 서비스 이용방법</h1>
+                  <span>브랜드 개설부터 연동방법<br>알아보세요.</span>
+                  <p>자세히 보기<img src="images/main/arrow_icon.png" alt=""></p>
+               </a></li>
                <li class="active"><a href="page/guide01.php" target="_blank">
-                  <h1>발신번호 사전등록</h1>
+                  <h1>발신번호 사전등록 안내</h1>
                   <span>전송전에 미리 발신번호를<br>등록해 주세요.</span>
+                  <p>자세히 보기<img src="images/main/arrow_icon.png" alt=""></p>
+               </a></li>
+               <li class="active"><a href="page/guide02.php" target="_blank">
+                  <h1>통신가입 증명서 발급방법</h1>
+                  <span>통신사별 가입 증명서 발급방법<br>알아보세요.</span>
                   <p>자세히 보기<img src="images/main/arrow_icon.png" alt=""></p>
                </a></li>
                <li class="active"><a href="page/guide03.php" target="_blank">
                   <h1>광고성 메시지 작성안내</h1>
-                  <span>광고성 메시지 전송전<br>반드시 확인해 주세요.</span>
+                  <span>광고성 메시지 전송전 반드시<br>확인해 주세요.</span>
                   <p>자세히 보기<img src="images/main/arrow_icon.png" alt=""></p>
                </a></li>
                <li class="active"><a href="page/guide05.php" target="_blank">
-                  <h1>통신사별 스팸필터링</h1>
-                  <span>문자 전송 성공인데<br>문자가 오지 않나요?</span>
+                  <h1>스팸필터링 서비스 확인안내</h1>
+                  <span>결과값은 성공인데<br>문자수신이 안된다면?</span>
+                  <p>자세히 보기<img src="images/main/arrow_icon.png" alt=""></p>
+               </a></li>
+               <li class="active"><a href="page/guide06.php" target="_blank">
+                  <h1>번호도용 문자차단 확인안내</h1>
+                  <span>결과값이 모두 실패로<br>처리된다면 확인해 주세요.</span>
                   <p>자세히 보기<img src="images/main/arrow_icon.png" alt=""></p>
                </a></li>
             </ul>
@@ -462,14 +271,28 @@
    <div class="section bn" id="s4">
       <div class="wrap">
          <div class="sec_tit">
-            <h1>이용에 궁금한 점이 있으신가요?</h1>
-            <h2>아래 번호로 문의해 주시면 빠르게 답변해 드립니다.</h2>
+            <h1>궁금한 점이 있으신가요?</h1>
+            <h3>아래 번호로 문의해 주시면 <b>빠르게 답변</b>해 드립니다.</h3>
          </div>
          <div class="cs_box">
-            <img src="images/main/phone_icon.gif" alt="">
-            <h1>1599-1234</h1>
-            <h2>운영시간 : 평일 09:00 ~ 18:00 (주말/공휴일 휴무)</h2>
-            <a href="tel:1599-1234">상담신청</a>
+            <ul>
+               <li>
+                  <span>고객센터</span>
+                  <h1>1599-1234</h1>
+                  <h2>평일 09:00 ~ 18:00 (주말/공휴일 휴무)</h2>
+               </li>
+               <li><img src="images/main/cs_icon.gif" alt=""></li>
+            </ul>
+            <ul>
+               <li>
+                  <span>자주 묻는 질문 ></span>
+                  <a href="page/guide.php#faq" target="_blank">확인하기</a>
+               </li>
+               <li>
+                  <img src="images/main/faq_icon.gif" alt="">
+               </li>
+               </a>
+            </ul>
          </div>
       </div>
    </div>

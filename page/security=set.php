@@ -28,12 +28,12 @@
          <div class="security_box">
             <div class="sec_set">
                <div class="sec_set_top">
-                  <span>로그인 허용 아이피<br>(접속 IP : <b>157.201.40.267</b>)</span>
+                  <span>로그인 허용 아이피<br>(접속 IP : <b>123.456.78.910</b>)</span>
                   <div class="sec_set_mode"><p></p></div>
                </div>
                <ul>
                   <div class="sec_set_cover"></div>
-                  <li><span><h1>175.201.40.237</h1><h2>2022-11-23 11:22:14</h2></span><a href="" class="bl4">삭제</a></li>
+                  <li><span><h1>123.456.78.910</h1><h2>2022-11-23 11:22:14</h2></span><a href="" class="bl4">삭제</a></li>
                   <li><input type="text" placeholder="아이피를 입력해 주세요."><a href="">등록</a></li>
                   <li><input type="text" placeholder="아이피를 입력해 주세요."><a href="">등록</a></li>
                   <li><input type="text" placeholder="아이피를 입력해 주세요."><a href="">등록</a></li>
